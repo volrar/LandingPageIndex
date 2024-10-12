@@ -26,7 +26,7 @@ body {
   }
 
   a {
-    color:white;
+    color: #d4d0cc;
     text-decoration: none;
     }
   
@@ -78,6 +78,7 @@ nav {
     position: relative;
     width: auto;
     height: 100%;
+    z-index: 5;
   }
   
   /* Additional Navigation (Hidden Initially) */
@@ -120,7 +121,7 @@ nav {
   }
   
   input[type="checkbox"]:checked ~ #additional-nav {
-    transform: translateX(10vw);
+    transform: translateX(0vw);
   }
   
   input[type="checkbox"] {
@@ -149,7 +150,8 @@ nav {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    background-color: #d4d0cc;
   }
   
   .horizontal {
@@ -243,7 +245,7 @@ nav {
     height: 2.5rem;
     width: 10rem;
     display: flex;
-    margin: 2rem 1rem;
+    margin: 3rem auto;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     outline: 2px solid #3b3b3b;

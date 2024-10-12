@@ -199,7 +199,8 @@ nav {
     height: 100vh;
     background-repeat: no-repeat;
     /* background-color: red; */
-    background-size: 33em;
+    background-size: auto 44em;
+    background-position-x: -2.3rem;
   }
 
   .heroContentContainer {
@@ -282,7 +283,7 @@ nav {
   }
 
   .heroContentContainer {
-    width: 55%;
+    width: 47%;
     top: 5.5rem;
     margin-left: 1.2rem;
   }

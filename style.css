@@ -62,7 +62,7 @@ nav {
   }
   .main-navigation {
     width: 70%;
-    margin: auto;
+    margin: .75rem auto;
     display: flex;
     justify-content: space-between;
   }
@@ -106,7 +106,7 @@ nav {
     cursor: pointer;
     position: relative;
     width: fit-content;
-    margin: 5rem;
+    margin: 4rem auto;
   }
   
   .sidebarMenuInner li a {
@@ -139,7 +139,7 @@ nav {
     z-index: 99;
     height: 100%;
     width: 15%;
-    margin: 1.2rem 1rem;
+    margin: 1rem;
     height: 22px;
     width: 22px;
   }
@@ -234,10 +234,6 @@ nav {
     font-family: Horseland;
   }
 
-  .heroContentButtonContainer {
-    /* background-color: blue; */
-   /* background-color: red; */
-  }
 
   .heroContentButton {
     background: #b0b0b0;
@@ -250,6 +246,7 @@ nav {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     outline: 2px solid #3b3b3b;
+    font-family: Georgia, Times, serif;
   }
 
   .heroContentButton:hover {
@@ -272,10 +269,6 @@ nav {
     align-self: center;
   }
 
-  .buttonMainText{
-
-  }
-
 @media (min-width: 344px) {
   #heroLandingContainer {
     height: 100vh;
@@ -293,54 +286,3 @@ nav {
 
 }
 
-@media (min-width: 600px) {
-
-}
-  /* Footer */
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100vw;
-    height: 15rem;
-    margin: -2rem auto;
-    background-color: #75989f;
-  }
-
-  .socialsContainer {
-    margin: 0 auto;
-  }
-
-  .variousLinks {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .linkSectionContainer {
-    width: 20%;
-  }
-
-  .linkSectionContainer ul {
-    display: contents;
-    list-style-type: none;
-  }
-
-  .linkSectionContainer li {
-    font-size: .75rem;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-  }
-
-  .linkSectionContainer h6 {
-    position: relative;
-    margin: auto;
-    text-align: center;
-  }
-
-  .copyright {
-    margin: 0 auto;
-  }
-
-  /* End Footer */

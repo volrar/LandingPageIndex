@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  background-color: #3b3b3b;
+  background-color: #040404;
     margin: 0 auto;
   }
   
@@ -199,7 +199,7 @@ nav {
     height: 100vh;
     background-repeat: no-repeat;
     /* background-color: red; */
-    background-size: auto 44em;
+    background-size: auto 42em;
     background-position-x: -2.3rem;
   }
 

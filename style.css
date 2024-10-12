@@ -196,9 +196,10 @@ nav {
   #heroLandingContainer{
     position: relative;
     width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
     /* background-color: red; */
-    background-size: cover;
+    background-size: 33em;
   }
 
   .heroContentContainer {
@@ -277,12 +278,13 @@ nav {
     width: 100vw;
     background-image: url(Logryan05.png);
     position: relative;
-    margin: 2rem auto;
+    margin-top: 1rem;
   }
 
   .heroContentContainer {
     width: 55%;
-    top: 4rem;
+    top: 5.5rem;
+    margin-left: 1.2rem;
   }
 
 }

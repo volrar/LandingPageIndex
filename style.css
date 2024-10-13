@@ -32,17 +32,17 @@ a {
   
   @font-face {
     font-family: Feasibly;
-    src: url(Assets/Fonts/FeasiblySingleLine-z8D90.ttf);
+    src: url(/Assets/Fonts/FeasiblySingleLine-z8D90.ttf);
   }
 
   @font-face {
     font-family: Basheq;
-    src: url(Assets/Fonts/BasheqVintageDemoVersionRegular-gwpmE.otf);
+    src: url(/Fonts/BasheqVintageDemoVersionRegular-gwpmE.otf);
   }
 
   @font-face {
     font-family: Horesland;
-    src: url(Assets/Fonts/WtfHorselandDemo-4n3y6.ttf);
+    src: url(/Assets/Fonts/WtfHorselandDemo-4n3y6.ttf);
   }
 
   /* End General Styles */
@@ -226,7 +226,7 @@ a {
 
 @media (min-width: 344px) {
   #hero {
-    background-image: url(Assets/Images/Logryan05.png);
+    background-image: url(/Assets/Images/Logryan05.png);
     background-size: auto 100vh;
     background-position-x: -1.8rem;
     margin-top: -2rem;

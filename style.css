@@ -32,210 +32,159 @@ body {
   
   @font-face {
     font-family: Feasibly;
-    src: url(FeasiblySingleLine-z8D90.ttf);
+    src: url(Assets/Fonts/FeasiblySingleLine-z8D90.ttf);
   }
 
   @font-face {
     font-family: Basheq;
-    src: url(BasheqVintageDemoVersionRegular-gwpmE.otf);
+    src: url(Assets/Fonts/BasheqVintageDemoVersionRegular-gwpmE.otf);
   }
 
   @font-face {
     font-family: Horesland;
-    src: url(WtfHorselandDemo-4n3y6.ttf);
+    src: url(Assets/Fonts/WtfHorselandDemo-4n3y6.ttf);
   }
 
   /* End General Styles */
 
 /* Navigation */
 /* Main Navigation */
-nav {
+.navigation {
     position:fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 3rem;
     background: #0c0c0ccc;
-    font-size: 20px;
-    top: 0;
+    font-size: 1.2em;
     z-index: 3;
   }
-  .main-navigation {
+
+  .mainNavigation {
     width: 70%;
     margin: .75rem auto;
     display: flex;
     justify-content: space-between;
   }
   
-  .logo-container {
+  .logoContainer {
     width: 15%;
     height: 100%;
     display: flex;
     justify-content: center;
     margin-left: .5rem;
-  }
-  
-  .logo {
-    position: relative;
-    width: auto;
-    height: 100%;
     z-index: 5;
   }
   
+
   /* Additional Navigation (Hidden Initially) */
-  #additional-nav {
+  #additionalNav {
     height: 100%;
     position: fixed;
     width: 100%;
     margin-top: 0;
     transform: translateX(100vw);
-    transition: transform 250ms ease-in-out;
+    transition: transform 400ms ease-in-out;
     background: linear-gradient(180deg, #000000ea 0%, #000000be 100%);
   }
   
-  .sidebarMenuInner {
+  .additionalNavMenu {
     margin: 0;
     padding: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
   }
   
-  .sidebarMenuInner li {
+  .additionalNavMenu li {
     list-style: none;
-    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
-    position: relative;
     width: fit-content;
     margin: 4rem auto;
   }
   
-  .sidebarMenuInner li a {
-    color: #fff;
+  .additionalNavMenu li a {
+    color: #d4d0cc;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
   }
   
-  .sidebarMenuInner li:hover {
-    scale: 1.02;
+  .additionalLink:hover {
+    scale: 1.1;
+    color: red;
   }
   
-  input[type="checkbox"]:checked ~ #additional-nav {
+  input[type="checkbox"]:checked ~ #additionalNav {
     transform: translateX(0vw);
   }
   
   input[type="checkbox"] {
-    transition: all 0.3s;
-    box-sizing: border-box;
     display: none;
   }
   
-  .additional-nav {
-    transition: all 0.3s;
-    box-sizing: border-box;
+  .hamburgerMenu {
     cursor: pointer;
-    position: relative;
     z-index: 99;
-    height: 100%;
-    width: 15%;
-    margin: 1rem;
-    height: 22px;
-    width: 22px;
+    height: fit-content;
+    margin: .75rem 1rem;
+    width: 1.5rem;
   }
   
   .bar {
     transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
     height: 3px;
     width: 100%;
     border-radius: 1rem;
     background-color: #d4d0cc;
-  }
-  
-  .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
     margin-top: 3px;
   }
-  
-  .diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: left;
+
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar {
+    transform: rotate(315deg);
   }
   
-  .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-  }
-  
-  input[type="checkbox"]:checked ~ .additional-nav > .horizontal {
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(1) {
     opacity: 0;
   }
   
-  input[type="checkbox"]:checked ~ .additional-nav > .diagonal.part-1 {
-    transform: rotate(135deg);
-    margin-top: 8px;
-    background-color: white;
-  }
-  
-  input[type="checkbox"]:checked ~ .additional-nav > .diagonal.part-2 {
-    transform: rotate(-135deg);
-    margin-top: -9px;
-    background-color: white;
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(3) {
+    transform: rotate(225deg);
+    position: relative;
+    top: -.4rem;
   }
   
   /* End Navigation */
 
-  #heroLandingContainer{
+  #hero{
     position: relative;
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
-    /* background-color: red; */
-    background-size: auto 100vh;
-    background-position-x: -1.8rem;
   }
 
   .heroContentContainer {
     width: fit-content;
     height: fit-content;
     position: relative;
-    /* background-color: green; */
   }
 
-  .heroContentText {
+  .heroText {
     color: white;
-    margin-left: .5rem;
-    /* background-color: blue; */
+    margin: .5rem;
   }
 
-  .heroContentText p {
+  .heroText p {
     font-size: 2rem;
-    /* background-color: red; */
     height: fit-content;
     font-family: Basheq;
   }
 
   span {
     font-family: "Feasibly";
-    font-weight: 600;
-  }
-
-  .emphasize {
-    font-family: Horseland;
+    font-weight:bolder;
   }
 
 
-  .heroContentButton {
+  .heroButton {
     background: #b0b0b0;
     color: #3b3b3b;
     border-radius: 2rem;
@@ -249,17 +198,17 @@ nav {
     font-family: Georgia, Times, serif;
   }
 
-  .heroContentButton:hover {
+  .heroButton:hover {
     background: #c9c9bb;
     color: #3b3b3b;
   }
 
-  .heroContentButton:nth-child(2) {
+  .heroButton:nth-child(2) {
     background: #6493a5;
     color: #3b3b3b;
   }
 
-  .heroContentButton:nth-child(2):hover {
+  .heroButton:nth-child(2):hover {
     background: #c9c9bb;
     color: #3b3b3b;
   }
@@ -269,12 +218,16 @@ nav {
     align-self: center;
   }
 
+  .buttonMainText {
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
 @media (min-width: 344px) {
-  #heroLandingContainer {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(Logryan05.png);
-    position: relative;
+  #hero {
+    background-image: url(Assets/Images/Logryan05.png);
+    background-size: auto 100vh;
+    background-position-x: -1.8rem;
     margin-top: -2rem;
   }
 

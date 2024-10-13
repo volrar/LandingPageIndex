@@ -2,6 +2,7 @@
 body {
   background-color: #040404;
     margin: 0 auto;
+    color: white;
   }
   
   h3 {
@@ -10,6 +11,7 @@ body {
   }
   
   p {
+    color: white;
     font-size: 1.3rem;
   }
   
@@ -253,10 +255,11 @@ a {
 
 .formContainer {
   width: 95%;
-  height: 65vh;
+  height: 100vh;
   margin: auto;
   position: relative;
-  top: 3rem;
+  top: 1rem;
+  margin-bottom: 1rem;
   background-color: red;
 }
 
@@ -266,18 +269,21 @@ a {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   background-color: green;
 }
 
 input {
-  height: 2rem;
+  height: 3rem;
   border-radius: .5rem;
-  width: 98.5%;
+  margin-top: 2rem;
+  width: 100%;
   border: none;
+  padding: 0;
 }
 
 textarea {
-  margin-top: .25rem;
+  padding: 0;
+  height: 8rem;
+  margin-top: 2rem;
   border-radius: .5rem;
 }

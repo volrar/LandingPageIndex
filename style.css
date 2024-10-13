@@ -25,10 +25,10 @@ body {
     display: block;
   }
 
-  a {
-    color: #d4d0cc;
-    text-decoration: none;
-    }
+a {
+  color: #d4d0cc;
+  text-decoration: none;
+  }
   
   @font-face {
     font-family: Feasibly;
@@ -48,7 +48,9 @@ body {
   /* End General Styles */
 
 /* Navigation */
+
 /* Main Navigation */
+
 .navigation {
     position:fixed;
     display: flex;
@@ -75,7 +77,6 @@ body {
     margin-left: .5rem;
     z-index: 5;
   }
-  
 
   /* Additional Navigation (Hidden Initially) */
   #additionalNav {

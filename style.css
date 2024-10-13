@@ -255,11 +255,11 @@ a {
 
 .formContainer {
   width: 95%;
-  height: 100vh;
+  height: 65vh;
   margin: auto;
   position: relative;
-  top: 1rem;
-  margin-bottom: 1rem;
+  top: 2rem;
+  margin-bottom: 2rem;
   background-color: red;
 }
 

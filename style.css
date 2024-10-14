@@ -299,12 +299,19 @@ textarea {
   padding: 0;
   width: 100%;
   height: 20rem;
-  background-color: red;
+  background: url(Assets/Images/Logryan03-1.png);
+  background-size: cover;
+  background-position-y: -2rem;
+  background-position-x: 6rem;
 }
 
 .firstContent h3 {
   padding: 0;
   margin: 0;
+  position: relative;
+  top: 7.5rem;
+  left: 1rem;
+  width: 70%;
 }
 
 .secondContent h3 {

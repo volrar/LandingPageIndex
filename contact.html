@@ -51,28 +51,6 @@
         </nav>
     </header>
     <div class="wrapper"><!-- Main content wrapper-->
-<!--
- <div class="formContainer"> // Start form container//
-     //Contact Form Start//
-    <form id="contactForm" action="mailto:log.r.ryan@gmail.com" method="post" enctype="text/plain">
-        
-            <h3 class="contactFormText">test!</h3>
-
-            <input type="text" id="name" name="name" placeholder="Full Name.." required>
-
-            <input type="email" id="email" name="email" placeholder="Email Address.." required>
-
-            <input type="text" id="subject" name="subject" placeholder="Subject..">
-
-            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
-
-        <input type="submit" value="Send!">
-
-    </form>
-    // Contact Form End //
-
-    </div>// End form-container //
--->
 
 <div class="firstContent">
     <h3>Let's get to know each other!</h3>
@@ -83,17 +61,101 @@
 
         <ul class="quickLinkContainer">
 
-            <li><a class="quickLink">Frequently Asked Questions</a></li>
+            <li><a class="quickLink" href="#faq">Frequently Asked Questions</a></li>
 
-            <li><a class="quickLink">Contact Information</a></li>
+            <li><a class="quickLink" href="#contact">Contact Information</a></li>
 
-            <li><a class="quickLink">Contact Form</a></li>
+            <li><a class="quickLink" href="#contactForm">Contact Form</a></li>
 
-            <li><a class="quickLink">Additional Information</a></li>
+            <li><a class="quickLink" href="#information">Additional Information</a></li>
 
         </ul>
 </div>
 
+<section id="faq">
+    <div class="faqContianer">
+        <h3>Frequently Asked Questions</h3>
+
+            <ul class="questionsContainer">
+
+                <li class="questionContent">
+
+                    <h4 class="question">Frequently asked questions one</h4>
+                    <p class="answer inactive">Answer to question random words to make myself feel better. I want to see how this reacts with the page.</p>
+
+                </li>
+
+                <li class="questionContent">
+
+                    <h4  class="question">Frequently asked questions one</h4>
+                    <p class="answer inactive">Answer to question</p>
+
+                </li>
+
+                <li class="questionContent">
+
+                    <h4  class="question">Frequently asked questions one</h4>
+                    <p class="answer inactive">Answer to question</p>
+
+                </li>
+
+                <li class="questionContent">
+
+                    <h4  class="question">Frequently asked questions one</h4>
+                    <p class="answer inactive">Answer to question</p>
+
+                </li>
+
+                <li class="questionContent">
+
+                    <h4  class="question">Frequently asked questions one</h4>
+                    <p class="answer inactive">Answer to question</p>
+
+                </li>
+
+            </ul>
+    </div>
+</section>
+<section id="contact">
+    <div class="contactContentContainer">
+        <div class="contactInfo">
+            <h3>Information</h3>
+
+            <p>I currently am only accepting inquiries exclusively through email. Please use the contact form provided to send me a
+                message regarding your project or inquiry. If you encounter any issues with the form or prefer to reach out
+                directly, feel free to reach out using the email below.
+            </p>
+
+            <p>log.r.ryan@gmail.com</p>
+
+            <p>In your message, please let me kow if you'd like a callback or if you prefer to communicate via email.
+                For the best experience, I recommend including a phone number in the form so I may follow up based on your
+                communication preferences.
+            </p>
+        </div>
+    </div>
+
+    <div class="formContainer"> 
+
+       <form id="contactForm" action="mailto:log.r.ryan@gmail.com" method="post" enctype="text/plain">
+           
+               <h3 class="contactFormText">test!</h3>
+   
+               <input type="text" id="name" name="name" placeholder="Full Name.." required>
+   
+               <input type="email" id="email" name="email" placeholder="Email Address.." required>
+   
+               <input type="text" id="subject" name="subject" placeholder="Subject..">
+   
+               <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+   
+           <input type="submit" value="Send!">
+   
+       </form>
+   
+       </div>
+
+</section>
 </div><!-- End Content Wrapper-->
 </body>
 </html>

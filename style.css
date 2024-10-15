@@ -39,42 +39,6 @@ a {
     align-content: center;
   }
 
-  .questionsContainer {
-    margin: 0;
-    display: contents;
-  }
-
-  .questionContent {
-    position: relative;
-    width: fit-content;
-    margin: auto 1rem;
-    /* background-color: pink; */
-  }
-
-  .question {
-    cursor: pointer;
-    padding-left: 1rem;
-    width: 90%;
-    /* background-color: purple; */
-  }
-
-  .answer {
-    padding: 0;
-    width: fit-content;
-    margin:  1rem;
-  }
-
-  #contact {
-    padding: 0;
-    margin:  -2rem auto;
-    /* background-color: blue; */
-  }
-
-  input[type="submit"] {
-    align-self: center;
-    margin-top: 1rem;
-    border-radius: 2rem;
-  }
 
   @font-face {
     font-family: Feasibly;
@@ -290,12 +254,118 @@ a {
 
 /* Contact Form */
 
-#wrapper {
-  z-index: 100;
-  height: auto;
-  width: 100vw;
+.firstContent {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 20rem;
+   background-size: cover;
+  background-position: top;
+  background-position-x: 4rem;
+  background-image: url(Assets/Images/Logryan03-1.png);
 }
 
+.firstContent h3 {
+  position: relative;
+  top: 4rem;
+  left: .5rem;
+  width: 60%;
+}
+
+.secondContent {
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+  /* background-color: blue; */
+}
+
+.secondContent > h3 {
+  padding: 1.25rem;
+  text-align: center;
+  position: relative;
+}
+
+.quickLinkContainer {
+  text-align: center;
+  list-style-type: none;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.quickLinkContainer li {
+  width: 85%;
+  height: 4rem;
+  margin: 1rem .25rem;
+  outline: 1px solid white;
+  border-radius: .5rem;
+  align-content: center;
+}
+
+/* Frequently Asked Questions */
+
+#faq {
+  /* background-color: red; */
+  width: 100%;
+  margin: -1rem 0;
+  padding: 1rem 0;
+}
+
+.faqContianer h3 {
+  align-self: center;
+  text-align: center;
+  margin: auto;
+  /* background-color: grey; */
+}
+
+.faqContianer {
+  padding: 1rem;
+  /* background-color: blue; */
+}
+
+.questionsContainer {
+  margin: 0;
+  display: contents;
+}
+
+.questionContent {
+  position: relative;
+  width: fit-content;
+  margin: auto 1rem;
+  /* background-color: pink; */
+}
+
+.question {
+  cursor: pointer;
+  padding-left: 1rem;
+  width: 90%;
+  /* background-color: purple; */
+}
+
+.answer {
+  padding: 0;
+  width: fit-content;
+  margin:  1rem;
+}
+
+/* End Frequently Asked Questions */
+
+/* Contact Information/Form */
+
+#contact {
+  padding: 0;
+  margin:  -2rem auto;
+  /* background-color: blue; */
+}
+
+.contactInfo h3 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contactInfo p {
+  margin: 1.5rem;
+  text-indent: 1rem;
+}
 
 .formContainer {
   width: 95%;
@@ -322,6 +392,30 @@ a {
   /* background-color: pink; */
 }
 
+input {
+  height: 4rem;
+  border-radius: .5rem;
+  margin: .5rem 0;
+  width: 65%;
+  border: none;
+  padding: 0;
+}
+
+textarea {
+  padding: 0;
+  height: 8rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+}
+
+input[type="submit"] {
+  align-self: center;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+/* End Contact Form */
+
 .informationContainer {
   width: 95%;
   margin: auto;
@@ -339,6 +433,12 @@ a {
   text-indent: 1rem;
 }
 
+.informationTitle {
+  font-size: 2rem;
+  margin: .75rem auto;
+  text-align: center;
+}
+
 .informationList {
   display: flex;
   flex-direction: column;
@@ -349,14 +449,14 @@ a {
   list-style-type: none;
 }
 
-.contactInfo h3 {
-  margin-top: 1rem;
-  text-align: center;
+.informationList li {
+  margin-left: -1rem;
+  list-style-type: none;
 }
 
-.contactInfo p {
-  margin: 1.5rem;
-  text-indent: 1rem;
+.informationList:nth-child(2) li {
+  margin: 1rem;
+  font-size: 1.3rem;
 }
 
 .informationList:nth-child(3) {
@@ -366,18 +466,6 @@ a {
   padding-left: 2rem;
 }
 
-.informationList:nth-child(2) li {
-  margin: 1rem;
-  font-size: 1.3rem;
-}
-
-
-
-.informationList li {
-  margin-left: -1rem;
-  list-style-type: none;
-}
-
 .informationSubList li {
   list-style-type: disc;
   width: 90%;
@@ -385,105 +473,4 @@ a {
   margin-left: .25rem;
 }
 
-.informationTitle {
-  font-size: 2rem;
-  margin: .75rem auto;
-  text-align: center;
-}
-
-/* #additionalInfo {
-  background-color: pink;
-} */
-
-input {
-  height: 4rem;
-  border-radius: .5rem;
-  margin: .5rem 0;
-  width: 65%;
-  border: none;
-  padding: 0;
-}
-
-
-textarea {
-  padding: 0;
-  height: 8rem;
-  margin-top: 1rem;
-  border-radius: .5rem;
-}
-
-
-.firstContent {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  height: 20rem;
-  /* background: url(Assets/Images/0G2A3206.JPG); */
-   background-size: cover;
-  background-position: top;
-  background-position-x: 4rem;
-  background-image: url(Assets/Images/Logryan03-1.png);
-}
-
-.firstContent h3 {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 4.5rem;
-  left: 1rem;
-  width: 60%;
-}
-
-
-.secondContent > h3 {
-  padding: 1.25rem;
-  text-align: center;
-  position: relative;
-}
-
-.secondContent {
-  padding: 0;
-  margin: 0;
-  height: fit-content;
-  /* background-color: blue; */
-}
-
-.quickLinkContainer {
-  text-align: center;
-  list-style-type: none;
-  justify-content: center;
-  /* background-color: green; */
-}
-
-.quickLinkContainer li {
-  width: 85%;
-  height: 4rem;
-  margin: 1rem .15rem;
-  outline: 1px solid white;
-  border-radius: .5rem;
-  align-content: center;
-}
-
-/* Frequently Asked Questions */
-
-#faq {
-  /* background-color: red; */
-  width: 100%;
-  height: auto;
-  margin: -1rem 0;
-  padding: 1rem 0;
-}
-
-.faqContianer h3 {
-  align-self: center;
-  text-align: center;
-  margin: auto 1rem;
-  /* background-color: grey; */
-}
-
-.faqContianer {
-  margin: 0;
-  height: 100%;
-  padding: 1rem;
-  /* background-color: blue; */
-}
+/* End Contact Information/Form */

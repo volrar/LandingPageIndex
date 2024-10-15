@@ -456,7 +456,7 @@ textarea {
   width: 85%;
   height: 4rem;
   margin: 1rem .15rem;
-  outline: 1px solid black;
+  outline: 1px solid white;
   border-radius: .5rem;
   align-content: center;
 }

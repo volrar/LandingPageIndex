@@ -68,6 +68,10 @@ a {
     background-color: blue;
   }
 
+  input[type="submit"] {
+    align-self: center;
+  }
+
   @font-face {
     font-family: Feasibly;
     src: url(Assets/Fonts/FeasiblySingleLine-z8D90.ttf);
@@ -314,16 +318,20 @@ a {
 input {
   height: 3rem;
   border-radius: .5rem;
-  margin-top: 2rem;
-  width: 100%;
+  margin: .5rem 0;
+  width: 60%;
   border: none;
   padding: 0;
+}
+
+#subject {
+  width: 75%;
 }
 
 textarea {
   padding: 0;
   height: 8rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: .5rem;
 }
 

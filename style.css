@@ -54,6 +54,7 @@ a {
   .question {
     cursor: pointer;
     padding-left: 1rem;
+    width: 90%;
     /* background-color: purple; */
   }
 
@@ -419,22 +420,24 @@ textarea {
   height: 20rem;
   /* background: url(Assets/Images/0G2A3206.JPG); */
    background-size: cover;
-  background-position: center;
-  background-image: url(Assets/Images/0G2A3206.JPG);
+  background-position: top;
+  background-position-x: 4rem;
+  background-image: url(Assets/Images/Logryan03-1.png);
 }
 
 .firstContent h3 {
   padding: 0;
   margin: 0;
   position: relative;
-  top: 7.5rem;
+  top: 4.5rem;
   left: 1rem;
-  width: 70%;
+  width: 60%;
 }
+
 
 .secondContent > h3 {
   padding: 1.25rem;
-  margin: 0;
+  text-align: center;
   position: relative;
 }
 
@@ -473,6 +476,7 @@ textarea {
 
 .faqContianer h3 {
   align-self: center;
+  text-align: center;
   margin: auto 1rem;
   /* background-color: grey; */
 }

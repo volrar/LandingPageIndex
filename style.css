@@ -52,6 +52,7 @@ a {
   }
 
   .question {
+    cursor: pointer;
     padding-left: 1rem;
     background-color: purple;
   }
@@ -442,7 +443,7 @@ textarea {
   background-color: red;
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0;
 }
 

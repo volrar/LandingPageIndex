@@ -64,8 +64,8 @@ a {
   }
 
   #contact {
-    height: auto;
-    margin: 0;
+    padding: 0;
+    margin:  -2rem auto;
     background-color: blue;
   }
 
@@ -294,6 +294,7 @@ a {
   width: 100vw;
 }
 
+
 .formContainer {
   width: 95%;
   height: 30rem;
@@ -313,7 +314,8 @@ a {
 }
 
 .contactFormText {
-  margin-top: 2.5rem;
+  margin: .5rem auto;
+  font-size: 1.5rem;
   background-color: pink;
 }
 
@@ -334,10 +336,15 @@ a {
   background-color: red;
 }
 
+.informationDisclaimer p {
+  text-indent: 1rem;
+}
+
 .informationList {
   display: flex;
   flex-direction: column;
   padding: 0;
+  text-indent: 1rem;
   background-color: purple;
   list-style-type: none;
 }
@@ -417,6 +424,7 @@ textarea {
 
 .secondContent {
   padding: 0;
+  margin: 0;
   height: fit-content;
   background-color: blue;
 }
@@ -443,13 +451,19 @@ textarea {
   background-color: red;
   width: 100%;
   height: auto;
-  margin: 1rem auto;
-  padding: 0;
+  margin: -1rem 0;
+  padding: 1rem 0;
 }
 
 .faqContianer h3 {
   align-self: center;
   margin: auto 1rem;
-
   background-color: grey;
+}
+
+.faqContianer {
+  margin: 0;
+  height: 100%;
+  padding: 1rem;
+  background-color: blue;
 }

@@ -5,6 +5,7 @@ body {
   background-color: #040404;
     margin: 0 auto;
     color: white;
+    font-size: 1.3rem;
   }
   
   h3 {
@@ -430,7 +431,7 @@ input[type="submit"] {
 }
 
 .informationContainer {
-  width: 90%;
+  width: 95%;
   margin: auto;
   /* background-color: purple; */
 }
@@ -444,7 +445,6 @@ input[type="submit"] {
 
 .informationDisclaimer p {
   width: 90%;
-  margin: 1rem 0;
   margin: auto;
   /* background-color: blue; */
 }
@@ -457,9 +457,8 @@ input[type="submit"] {
 
 .informationList {
   position: relative;
-  width: 75%;
-  margin: auto;
-  font-size: 1rem;
+  width: 95%;
+  margin: auto -.75rem;
   /* background-color: purple; */
   list-style-type: none;
   /* background-color: green; */
@@ -467,8 +466,9 @@ input[type="submit"] {
 
 .informationList li {
   list-style-type: none;
-  width: 125%;
-  margin: 0 -2.5rem;
+  width: 95%;
+  font-size: 1.3rem;
+  margin: auto -.75rem;
   /* background-color: red; */
 }
 
@@ -490,6 +490,7 @@ input[type="submit"] {
   list-style-type: disc;
   width: 90%;
   margin-top: 1rem;
+  font-size: 1.3rem;
   margin-left: .5rem;
   text-align: left;
 }

@@ -337,8 +337,7 @@ a {
 
 .question {
   cursor: pointer;
-  padding-left: 1rem;
-  width: 90%;
+  width: 100%;
   /* background-color: purple; */
 }
 
@@ -366,7 +365,6 @@ a {
 .contactInfo p {
   margin: 2rem;
   text-indent: 1rem;
-  text-align: center;
 }
 
 .formContainer {
@@ -399,7 +397,7 @@ input {
   height: 4rem;
   border-radius: .5rem;
   margin: .5rem 0;
-  width: 65%;
+  width: 100%;
   border: none;
   padding: 0;
 }
@@ -429,7 +427,6 @@ input[type="submit"] {
   width: 90%;
   margin:  .45rem;
   padding: 0;
-  text-align: center;
   /* background-color: red; */
 }
 
@@ -449,9 +446,8 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   padding: 0;
-  width: 90%;
-  text-align: center;
-  margin: auto -.55rem;
+  width: 85%;
+  margin: auto .15rem;
   /* background-color: purple; */
   list-style-type: none;
 }

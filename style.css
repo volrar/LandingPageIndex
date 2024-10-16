@@ -67,6 +67,7 @@ a {
     justify-content: space-between;
     width: 100%;
     height: 3rem;
+    top: 0;
     background: #0c0c0ccc;
     font-size: 1.2em;
     z-index: 3;
@@ -363,8 +364,9 @@ a {
 }
 
 .contactInfo p {
-  margin: 1.5rem;
+  margin: 2rem;
   text-indent: 1rem;
+  text-align: center;
 }
 
 .formContainer {
@@ -389,6 +391,7 @@ a {
   margin: auto;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+  text-align: center;
   /* background-color: pink; */
 }
 
@@ -410,7 +413,7 @@ textarea {
 
 input[type="submit"] {
   align-self: center;
-  margin-top: 1rem;
+  margin: 1.5rem auto;
   border-radius: 2rem;
 }
 
@@ -423,14 +426,17 @@ input[type="submit"] {
 }
 
 .informationDisclaimer {
-  width: 95%;
-  margin: auto;
-  padding: .25rem 0;
+  width: 90%;
+  margin:  .45rem;
+  padding: 0;
+  text-align: center;
   /* background-color: red; */
 }
 
 .informationDisclaimer p {
   text-indent: 1rem;
+  padding-left: .75rem;
+  margin-bottom: .5rem;
 }
 
 .informationTitle {
@@ -443,8 +449,9 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   padding: 0;
-  text-indent: 1rem;
-  margin: auto;
+  width: 90%;
+  text-align: center;
+  margin: auto -.55rem;
   /* background-color: purple; */
   list-style-type: none;
 }
@@ -452,10 +459,12 @@ input[type="submit"] {
 .informationList li {
   margin-left: -1rem;
   list-style-type: none;
+  margin-bottom: .75rem;
 }
 
 .informationList:nth-child(2) li {
-  margin: 1rem;
+  margin: 1rem auto;
+  margin-left: 3rem;
   font-size: 1.3rem;
 }
 
@@ -463,14 +472,15 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .informationSubList li {
   list-style-type: disc;
   width: 90%;
   margin: 1rem 0;
-  margin-left: .25rem;
+  margin-bottom:0rem;
+  text-align: left;
 }
 
 /* End Contact Information/Form */

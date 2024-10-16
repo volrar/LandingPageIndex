@@ -366,7 +366,7 @@ a {
 }
 
 .contactInfo p {
-  margin:  1rem 2.5rem;
+  margin:  1rem 2.25rem;
   margin-bottom: 2rem;
 }
 
@@ -444,7 +444,7 @@ input[type="submit"] {
 }
 
 .informationDisclaimer p {
-  width: 90%;
+  width: 85%;
   margin: auto;
   /* background-color: blue; */
 }

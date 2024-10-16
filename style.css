@@ -435,7 +435,7 @@ input[type="submit"] {
 }
 
 .informationDisclaimer {
-  width: 120%;
+  width: 100%;
   padding: 0;
   margin-bottom: .5rem;
   /* background-color: red; */
@@ -458,6 +458,7 @@ input[type="submit"] {
   position: relative;
   width: 75%;
   margin: auto;
+  font-size: 1rem;
   /* background-color: purple; */
   list-style-type: none;
   /* background-color: green; */
@@ -465,7 +466,7 @@ input[type="submit"] {
 
 .informationList li {
   list-style-type: none;
-  width: 120%;
+  width: 125%;
   margin: 0 -2.5rem;
   /* background-color: red; */
 }

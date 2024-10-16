@@ -36,7 +36,6 @@ a {
   
   ul {
     list-style-type: none;
-    align-content: center;
   }
 
 
@@ -74,7 +73,7 @@ a {
   }
 
   .mainNavigation {
-    width: 70%;
+    width: 60%;
     margin: .75rem auto;
     display: flex;
     justify-content: space-between;
@@ -95,7 +94,7 @@ a {
     position: fixed;
     width: 100%;
     margin-top: 0;
-    transform: translateX(100vw);
+    transform: translateX(130vw);
     transition: transform 400ms ease-in-out;
     background: linear-gradient(180deg, #000000ea 0%, #000000be 100%);
   }
@@ -309,6 +308,8 @@ a {
   width: 100%;
   margin: -1rem 0;
   padding: 1rem 0;
+  padding-bottom: .25rem;
+
 }
 
 .faqContianer h3 {
@@ -365,7 +366,6 @@ a {
 
 .contactInfo p {
   margin:  1rem 2.5rem;
-  text-indent: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -424,58 +424,64 @@ input[type="submit"] {
 
 /* End Contact Form */
 
+/* #additionalInfo {
+  background-color: grey;
+} */
+
 .informationContainer {
-  width: 95%;
+  width: 90%;
   margin: auto;
-  /* background-color: green; */
+  /* background-color: purple; */
 }
 
 .informationDisclaimer {
-  width: 90%;
-  margin: .5rem;
+  width: 120%;
   padding: 0;
+  margin-bottom: .5rem;
   /* background-color: red; */
 }
 
 .informationDisclaimer p {
-  text-indent: 1rem;
   width: 90%;
-  margin: auto 1.5rem;
+  margin: 1rem 0;
+  margin: auto;
+  /* background-color: blue; */
 }
 
 .informationTitle {
   font-size: 2rem;
   margin: 1rem auto;
-  margin-bottom: .75rem;
   text-align: center;
 }
 
 .informationList {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  width: 85%;
-  margin: auto .15rem;
+  position: relative;
+  width: 75%;
+  margin: auto;
   /* background-color: purple; */
   list-style-type: none;
+  /* background-color: green; */
 }
 
 .informationList li {
-  margin-left: -1rem;
   list-style-type: none;
+  width: 120%;
+  margin: 0 -2.5rem;
+  /* background-color: red; */
 }
 
 .informationList:nth-child(2) li {
-  margin: 1rem auto;
+  /* margin: 1rem auto;
   margin-left: 3rem;
-  font-size: 1.3rem;
+  font-size: 1.3rem; */
+  margin-bottom: .75rem;
+  /* background-color: pink; */
 }
 
 .informationList:nth-child(3) {
   display: flex;
   flex-direction: column;
   list-style-type: disc;
-  padding: 2rem;
 }
 
 .informationSubList li {

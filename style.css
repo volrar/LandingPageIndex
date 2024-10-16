@@ -424,9 +424,10 @@ input[type="submit"] {
 
 /* End Contact Form */
 
-/* #additionalInfo {
-  background-color: grey;
-} */
+#additionalInfo {
+  width: 100%;
+  /* background-color: grey; */
+}
 
 .informationContainer {
   width: 90%;

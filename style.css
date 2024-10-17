@@ -552,13 +552,14 @@ input[type="submit"] {
 }
  
 .aboutTitle {
+  margin: 1.25rem auto;
+  width: 65%;
   text-align: center;
-  background-color: red;
 }
 
 .aboutText {
   width: 85%;
   margin: .5rem auto;
   text-indent: 1rem;
-  background-color: green;
+
 }

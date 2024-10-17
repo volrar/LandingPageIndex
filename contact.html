@@ -65,7 +65,7 @@
 
             <li><a class="quickLink" href="#contact">Contact Information</a></li>
 
-            <li><a class="quickLink" href="#contactForm">Contact Form</a></li>
+            <li><a class="quickLink" href="#formContainer">Contact Form</a></li>
 
             <li><a class="quickLink" href="#additionalInfo">Additional Information</a></li>
 
@@ -145,11 +145,11 @@
         </div>
     </div>
 
-    <div class="formContainer"> 
+    <div id="formContainer"> 
 
        <form id="contactForm" action="mailto:log.r.ryan@gmail.com" method="post" enctype="text/plain">
            
-               <h3 class="contactFormText">Your next big project starts with a conversation!</h3>
+               <h3 id="contactFormText">Your next big project starts with a conversation!</h3>
 
                 <label for="fullName" id="fullName">Full Name</label>
                <input type="text" id="name" name="name" required>

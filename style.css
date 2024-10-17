@@ -309,7 +309,7 @@ a {
   /* background-color: red; */
   width: 100%;
   margin: -1rem 0;
-  padding: 1rem 0;
+  padding: 2rem 0;
   padding-bottom: .25rem;
 
 }
@@ -356,7 +356,7 @@ a {
 /* Contact Information/Form */
 
 #contact {
-  padding: 0;
+  padding-top: 2.25rem;
   margin:  -2rem auto;
   /* background-color: blue; */
 }
@@ -375,7 +375,7 @@ a {
   text-align: center;
 }
 
-.formContainer {
+#formContainer {
   width: 90%;
   height: 30rem;
   margin: 0 auto;
@@ -387,24 +387,26 @@ a {
 #contactForm {
   width: 95%;
   height: 100%;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: .25rem;
   display: flex;
   flex-direction: column;
   /* background-color: green; */
 }
 
-.contactFormText {
+#contactFormText {
   margin: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   font-size: 2rem;
   text-align: center;
+
   /* background-color: pink; */
 }
 
 input {
-  height: 4rem;
+  height: 5rem;
   border-radius: .5rem;
-  margin: .5rem 0;
+  margin: .25rem 0;
   width: 100%;
   border: none;
   padding: 0;
@@ -412,7 +414,7 @@ input {
 
 textarea {
   padding: 0;
-  height: 8rem;
+  height: 10rem;
   margin-top: 1rem;
   border-radius: .5rem;
 }

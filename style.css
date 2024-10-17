@@ -438,16 +438,16 @@ input[type="submit"] {
 }
 
 .informationDisclaimer {
-  width: 100%;
+  width: 95%;
   padding: 0;
+  margin: auto;
   margin-bottom: .5rem;
-  /* background-color: red; */
 }
 
 .informationDisclaimer p {
-  width: 85%;
+  width: 90%;
   margin: auto;
-  /* background-color: blue; */
+  margin-bottom: 1rem;
 }
 
 .informationTitle {
@@ -459,8 +459,8 @@ input[type="submit"] {
 
 .informationList {
   position: relative;
-  width: 95%;
-  margin: auto -.75rem;
+  width: 90%;
+  margin: auto -.5rem;
   /* background-color: purple; */
   list-style-type: none;
   /* background-color: green; */
@@ -490,16 +490,21 @@ input[type="submit"] {
 
 .informationSubList li {
   list-style-type: disc;
-  width: 90%;
-  margin-top: 1rem;
+  width: 75%;
+  margin: 1rem auto;
   font-size: 1.3rem;
-  margin-left: .5rem;
   text-align: left;
 }
 
 .informationSubList {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin: auto;
+  width: 85%;
+  margin-left: -.25rem;
+  /* background-color: pink; */
+}
+
+.informationSubList:nth-child(1) {
+  margin: auto;
 }
 
 /* End Contact Information/Form */

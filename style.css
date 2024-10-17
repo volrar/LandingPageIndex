@@ -2,10 +2,11 @@
 
 /* General Styles */
 body {
-  background-color: #040404;
+  background-color: #3b3b3b;
     margin: 0 auto;
-    color: white;
+    color: #c9c9bb;
     font-size: 1.3rem;
+
   }
   
   h3 {
@@ -14,7 +15,7 @@ body {
   }
   
   p {
-    color: white;
+    color: #c9c9bb;
     font-size: 1.3rem;
   }
   
@@ -180,7 +181,7 @@ a {
   }
 
   .heroText {
-    color: white;
+    color: #c9c9bb;
     margin: .5rem;
   }
 
@@ -257,6 +258,7 @@ a {
 
 .firstContent {
   margin: 0 auto;
+  margin-top: -.25rem;
   padding: 0;
   width: 100%;
   height: 20rem;
@@ -274,10 +276,11 @@ a {
 }
 
 .secondContent {
-  padding: 0;
+  padding-bottom: 3rem;
   margin: 0;
-  height: fit-content;
-  /* background-color: blue; */
+  margin-top: -.4rem;
+  height: auto;
+  /* background-color: #3b3b3b; */
 }
 
 .secondContent > h3 {
@@ -298,7 +301,7 @@ a {
   width: 85%;
   height: 4rem;
   margin: 1rem auto;
-  outline: 1px solid white;
+  outline: 1px solid #c9c9bb;
   border-radius: .5rem;
   align-content: center;
 }
@@ -306,12 +309,11 @@ a {
 /* Frequently Asked Questions */
 
 #faq {
-  /* background-color: red; */
+  /* background-color: #496b78; */
   width: 100%;
   margin: -1rem 0;
   padding: 2rem 0;
-  padding-bottom: .25rem;
-
+  padding-bottom: 1rem;
 }
 
 .faqContianer h3 {
@@ -347,6 +349,7 @@ a {
 
 .answer {
   padding: 0;
+  padding-bottom: 1rem;
   width: fit-content;
   margin:  1rem;
 }
@@ -358,11 +361,10 @@ a {
 #contact {
   padding-top: 2.25rem;
   margin:  -2rem auto;
-  /* background-color: blue; */
+  /* background-color: #77989f; */
 }
 
 .contactInfo h3 {
-  margin-top: .5rem;
   text-align: center;
 }
 
@@ -417,6 +419,7 @@ textarea {
   height: 10rem;
   margin-top: 1rem;
   border-radius: .5rem;
+  border: none;
 }
 
 input[type="submit"] {
@@ -430,7 +433,6 @@ input[type="submit"] {
 
 #additionalInfo {
   width: 100%;
-  /* background-color: grey; */
 }
 
 .informationContainer {

@@ -143,7 +143,7 @@ a {
   }
   
   .bar {
-    transition: all 0.3s;
+    transition: all 0.5s;
     height: 3px;
     width: 100%;
     border-radius: 1rem;
@@ -516,3 +516,49 @@ input[type="submit"] {
 }
 
 /* End Contact Information/Form */
+
+/* About Page */
+
+/* About Hero Content */
+
+#about {
+  margin-top: 3rem;
+  height: fit-content;
+
+}
+
+.aboutHero {
+  height: 19.5rem;
+  width: 100%;
+  /* background-color: red; */
+  background: url(Assets/Images/0G2A3283.JPG);
+  background-size: cover;
+  background-position: left;
+}
+
+.aboutHeroText {
+  width: 65%;
+  height: fit-content;
+  position: relative;
+  top: .25rem;
+  margin: 1rem;
+  /* background-color: blue; */
+}
+
+.heroText {
+  color: white;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
+ 
+.aboutTitle {
+  text-align: center;
+  background-color: red;
+}
+
+.aboutText {
+  width: 90%;
+  margin: .5rem auto;
+  text-indent: 1rem;
+  background-color: green;
+}

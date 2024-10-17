@@ -537,10 +537,10 @@ input[type="submit"] {
 }
 
 .aboutHeroText {
-  width: 65%;
+  width: 50%;
   height: fit-content;
   position: relative;
-  top: .25rem;
+  top: 1.5rem;
   margin: 1rem;
   /* background-color: blue; */
 }

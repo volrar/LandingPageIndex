@@ -396,7 +396,7 @@ a {
 .contactFormText {
   margin: auto;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   /* background-color: pink; */
 }
@@ -446,8 +446,12 @@ input[type="submit"] {
 
 .informationDisclaimer p {
   width: 90%;
-  margin: auto;
+  padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.disclaimer {
+  margin: 0;
 }
 
 .informationTitle {

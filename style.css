@@ -567,10 +567,34 @@ input[type="submit"] {
 
 /* Portfolio Page */
 
+.portfolioHeroContainer {
+  /* background-color: white; */
+  height: 20rem;
+  margin: 0;
+}
+
+.portfolioHeroText {
+  width: 65%;
+  position: relative;
+  top: 6rem;
+  left: 1.25rem;
+  background-color: blue;
+}
+
+.portfolioShowcaseContainer {
+  margin: 0;
+  /* background-color: grey; */
+}
+
+.portfolioShowcaseText {
+  /* background-color: red; */
+  margin: 0;
+}
+
 .portfolioCard {
   padding: .5rem;
-  height: 30rem;
-  outline: 1px solid black;
+  height: auto;
+  /* outline: 1px solid black; */
   background-color: whitesmoke;
 }
 
@@ -578,61 +602,95 @@ input[type="submit"] {
   height: 10rem;
   margin: 1.25rem;
   border-radius: 1rem;
-  background-color: green;
+  background-color: #c9c9bb;
 }
 
 .catergoryContainer {
   margin: 0;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .publishDateContainer {
-  height: 3rem;
-  background-color: purple;
+  margin: 0;
+  height: 2rem;
+  align-content: center;
+  /* background-color: purple; */
 }
 
 .publishDate {
   position: relative;
-  height: 100%;
-  align-content: center;
-  background-color: green;
+  height: fit-content;
+  margin: 0;
+  /* background-color: green; */
 }
 
 .projectTitleContainer {
-  background-color: yellow;
+  margin: 0;
+  height: 3rem;
+  align-content: center;
+  /* background-color: yellow; */
 }
 
 .projectTitle {
   margin: 0;
-  height: 3rem;
-  text-align: center;
+  height: 100%;
   align-content: center;
-  background-color: cyan;
+  text-align: center;
+  /* background-color: cyan; */
 }
 
 .projectDescriptionContainer {
   margin: 0;
-  height: fit-content;
-  background-color: green;
+  height: auto;
+  /* background-color: yellow; */
 }
 
 .projectDescription {
-  height: 50%;
-  background-color: purple;
+  margin: 0;
+  font-size: 1.15rem;
+  /* background-color: purple; */
+}
+
+.featuresContainer {
+  margin: 0;
+  padding-bottom: .25rem;
+  /* background-color: red; */
+}
+
+.featuresTitle {
+  width: fit-content;
+  position: relative;
+  margin: 0;
+  top: .5rem;
+  left: .5rem;
+  font-size: 1.25rem;
+  padding: .25rem;
+  /* background-color: cyan; */
+}
+
+.feature {
+  font-size: 1.25rem;
+  margin: .25rem -.5rem;
+  width: 95%;
+  /* list-style-type: disc;
+  background-color: grey; */
 }
 
 .liveLink {
-  background-color: brown;
+  height: 2rem;
+  align-content: center;
+  /* background-color: brown; */
 }
 
 .liveLinkTextWrap {
   display: flex;
   justify-content: center;
   margin: auto;
-  background-color: grey;
+  width: fit-content;
+  /* background-color: grey; */
 }
 
 .liveLinkText {
   margin: 0;
-  background-color: blue;
+  /* background-color: blue; */
 }

@@ -236,11 +236,10 @@ a {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
-@media (min-width: 344px) {
   #hero {
     background-image: url(Assets/Images/Logryan05.png);
     background-size: auto 100vh;
-    background-position-x: -1.8rem;
+    /* background-position-x: -1.8rem; */
     margin-top: -2rem;
   }
 
@@ -249,8 +248,6 @@ a {
     top: 5.5rem;
     margin-left: .25rem;
   }
-
-}
 
 /* Contact Page*/
 
@@ -263,9 +260,8 @@ a {
   width: 100%;
   height: 20rem;
    background-size: cover;
-  background-position: top;
-  background-position-x: 4rem;
-  background-image: url(Assets/Images/Logryan03-1.png);
+  background-position: left;
+  background-image: url(Assets/Images/0G2A3354.JPG);
 }
 
 .firstContent h3 {
@@ -569,26 +565,30 @@ input[type="submit"] {
 
 .portfolioHeroContainer {
   /* background-color: white; */
-  height: 20rem;
+  height: 25rem;
   margin: 0;
+  background: url(Assets/Images/Logryan03-1.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .portfolioHeroText {
   width: 65%;
   position: relative;
-  top: 6rem;
+  top: 2rem;
   left: 1.25rem;
   /* background-color: blue; */
 }
 
 .portfolioShowcaseContainer {
   margin: 0;
-  /* background-color: grey; */
 }
 
 .portfolioShowcaseText {
-  /* background-color: red; */
-  margin: 0;
+  margin: 0 auto;
+  width: 85%;
+  padding: 1rem;
 }
 
 .portfolioCard {
@@ -599,14 +599,14 @@ input[type="submit"] {
 }
 
 .projectImageContainer {
-  height: 10rem;
+  height: 12rem;
   margin: 1.25rem;
   border-radius: 1rem;
   background-color: #c9c9bb;
 }
 
 .catergoryContainer {
-  margin: auto;
+  margin: .25rem auto;
   display: flex;
   justify-content: flex-start;
   width: 90%;
@@ -638,35 +638,38 @@ input[type="submit"] {
 }
 
 .projectTitleContainer {
-  margin: 0;
-  height: 3rem;
+  margin: .5rem auto;
+  height: auto;
   align-content: center;
-  /* background-color: yellow; */
+  /* background-color: green; */
 }
 
 .projectTitle {
-  margin: 0;
+  margin: auto;
   height: 100%;
   align-content: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* background-color: cyan; */
 }
 
 .projectDescriptionContainer {
-  margin: 0 1rem;
+  margin: auto;
   height: auto;
   /* background-color: yellow; */
 }
 
 .projectDescription {
-  margin: 0;
+  margin: auto;
+  width: 85%;
+  padding-top: 1rem;
   font-size: 1.15rem;
   /* background-color: purple; */
 }
 
 .featuresContainer {
-  margin: 0;
+  margin: 0 auto;
+  width: 90%;
   padding-bottom: .25rem;
   /* background-color: red; */
 }
@@ -678,7 +681,6 @@ input[type="submit"] {
   top: .5rem;
   left: .5rem;
   font-size: 1.25rem;
-  padding: .25rem;
   /* background-color: cyan; */
 }
 

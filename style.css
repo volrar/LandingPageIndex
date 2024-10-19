@@ -70,24 +70,28 @@ a {
     height: 3rem;
     top: 0;
     background: #0c0c0ccc;
-    font-size: 1.3rem;
+    font-size: 100%;
     z-index: 3;
   }
 
   .mainNavigation {
     width: 80%;
-    margin: .75rem auto;
+    align-self: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: green;
   }
   
   .logoContainer {
-    width: 15%;
-    height: 100%;
+    width: 20%;
+    max-width: 5rem;
+    height: 90%;
     display: flex;
     justify-content: center;
-    margin-left: .5rem;
+    align-self: center;
+    margin: .25rem;
     z-index: 5;
+    background-color: red;
   }
 
   /* Additional Navigation (Hidden Initially) */
@@ -96,22 +100,29 @@ a {
     position: fixed;
     width: 100%;
     margin-top: 0;
-    transform: translateX(130vw);
-    transition: transform 400ms ease-in-out;
+    transform: translateX(150vw);
+    transition: transform 500ms ease-in-out;
     background: linear-gradient(180deg, #000000ea 0%, #000000be 100%);
   }
   
   .additionalNavMenu {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    height: 100vh;
+    padding: 1rem;
+    background-color: blue;
   }
   
   .additionalNavMenu li {
     list-style: none;
     text-transform: uppercase;
     cursor: pointer;
-    width: fit-content;
-    margin: 4rem auto;
+    margin: auto;
+    width: 80%;
+    min-width: fit-content;
+    top: 10%;
+    position: relative;
+    text-align: center;
+    background-color: red;
   }
   
   .additionalNavMenu li a {
@@ -123,7 +134,7 @@ a {
   
   .additionalLink:hover {
     scale: 1.1;
-    color: red;
+    /* color: red; */
   }
   
   input[type="checkbox"]:checked ~ #additionalNav {
@@ -138,8 +149,10 @@ a {
     cursor: pointer;
     z-index: 99;
     height: fit-content;
-    margin: .75rem 1rem;
+    align-self: center;
+    margin: .5rem;
     width: 1.5rem;
+    background-color: red;
   }
   
   .bar {
@@ -162,7 +175,7 @@ a {
   input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(3) {
     transform: rotate(225deg);
     position: relative;
-    top: -.4rem;
+    top: -.38rem;
   }
   
   /* End Navigation */
@@ -186,7 +199,6 @@ a {
   }
 
   .heroText p {
-    font-size: 2rem;
     height: fit-content;
     font-family: Basheq;
   }
@@ -254,8 +266,7 @@ a {
 /* Contact Form */
 
 .contactHeroContainer {
-  margin: 0 auto;
-  margin-top: -.25rem;
+  margin: -1.25rem auto;
   padding: 0;
   width: 100%;
   height: 18rem;
@@ -267,20 +278,20 @@ a {
 .contactHeroContainer p {
   position: relative;
   top: 4rem;
-  left: .5rem;
+  left: 1.5rem;
   width: 60%;
+  font-size: 2rem;
 }
 
 .quickContainer {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   margin: 0;
-  margin-top: -.4rem;
   height: auto;
-  /* background-color: #3b3b3b; */
+  /* background-color: green; */
 }
 
 .quickContainer > h3 {
-  padding: 1.25rem;
+  margin-top: 2.5rem;
   text-align: center;
   position: relative;
 }
@@ -290,7 +301,8 @@ a {
   list-style-type: none;
   justify-content: center;
   padding: .5rem;
-  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 0;
   /* background-color: red; */
 }
 
@@ -366,7 +378,7 @@ a {
 }
 
 .contactInfo p {
-  margin:  1rem 2.25rem;
+  margin:  1rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -433,24 +445,23 @@ input[type="submit"] {
 }
 
 .informationContainer {
-  width: 95%;
-  margin: auto;
-  padding: .1rem 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem 0;
   /* background-color: purple; */
 }
 
 .informationDisclaimer {
-  width: 95%;
+  width: 90%;
   padding: 0;
-  margin: auto;
-  margin-bottom: .5rem;
+  margin: 0 auto;
   /* background-color: green; */
 }
 
 .informationDisclaimer p {
   width: 90%;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 auto;
+  /* background-color: yellow; */
 }
 
 .disclaimer {
@@ -460,14 +471,14 @@ input[type="submit"] {
 .informationTitle {
   font-size: 2rem;
   margin: 1rem auto;
-  width: 95%;
+  width: 85%;
   text-align: center;
   /* background-color: red; */
 }
 
 .informationList {
   position: relative;
-  width: 85%;
+  width: 75%;
   padding-top: .5rem;
   margin: auto;
   list-style-type: none;
@@ -476,9 +487,9 @@ input[type="submit"] {
 
 .informationList li {
   list-style-type: none;
-  width: 95%;
+  width: 100%;
   font-size: 1.3rem;
-  margin: auto -.75rem;
+  margin: auto -1.75rem;
   /* background-color: red; */
 }
 
@@ -721,4 +732,188 @@ input[type="submit"] {
 .liveLinkText {
   margin: 0;
   /* background-color: blue; */
+}
+
+/* Media Queirys */
+
+@media (min-width: 225px ) and (min-height: 100px){
+  .navigation {
+    font-size: .75rem;
+  }
+  .mainNavigation {
+    width: 60%;
+  }
+  .additionalNavMenu li {
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+  .additionalNavMenu {
+    margin: 0;
+  }
+}
+
+@media (min-width: 260px) {
+
+  .navigation {
+    font-size: 1rem;
+  }
+
+}
+
+@media (min-width: 350px) and (min-height: 345px) {
+  .navigation {
+    font-size: 1.3rem;
+  }
+  .mainNavigation {
+    width: 70%;
+  }
+  .additionalNavMenu li {
+      font-size: 1.25rem;
+      margin: 1.25rem auto;
+  }
+}
+
+@media (min-width: 390px) and (min-height: 844px) {
+
+  #hero {
+    height: 98vh;
+    background-position-x: -4rem;
+  }
+
+}
+
+@media (min-width: 360px) and (min-height: 740px) {
+
+  #hero {
+    height: 98vh;
+    background-position-x: -4rem;
+  }
+
+}
+
+@media (min-width: 412px) and (min-height: 915px) {
+
+  #hero {
+    height: 98vh;
+    background-position-x: -6rem;
+  }
+
+  .heroContentContainer {
+    width: 55%;
+  }
+
+  .heroText p {
+    font-size: 3rem;
+  }
+
+  .heroButtonContainer {
+    margin: 5rem auto;
+    /* background-color: yellow; */
+  }
+
+}
+
+@media (min-width: 414px) and (min-height: 896px) {
+
+  #hero {
+    height: 98vh;
+    background-position-x: -4rem;
+  }
+
+  .heroText {
+    width: 15rem;
+    /* background-color: red; */
+  }
+
+  .heroText p{
+    font-size: 3rem;
+  }
+
+}
+
+@media (min-width: 450px) and (min-height: 390px) {
+  .mainNavigation {
+    width: 75%;
+  }
+
+  .hamburgerMenu {
+    margin: 1rem;
+  }
+
+  .additionalNavMenu li {
+    font-size: 1.5rem;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (min-width: 550px) {
+  .mainNavigation {
+    width: 80%;
+  }
+
+  .hamburgerMenu {
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .mainNavigation {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mainNavigation {
+    width: 90%
+  }
+}
+
+/* @media (min-height: 390px) {
+  .additionalNavMenu li {
+    font-size: 1.5rem;
+    margin: 1.25rem auto;
+  } */
+
+
+@media (min-height: 435px) {
+  .additionalNavMenu li {
+    font-size: 1.75rem;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (min-height: 490px) {
+  .additionalNavMenu li {
+    margin: 2rem auto;
+  }
+}
+
+@media (min-height: 550px) {
+  .additionalNavMenu li {
+    margin: 2.25rem auto;
+  }
+}
+
+@media (min-height: 600px) {
+  .additionalNavMenu li {
+    margin: 2.5rem auto;
+  }
+}
+
+@media (min-height: 645px) {
+  .additionalNavMenu li {
+    margin: 2.75rem auto;
+  }
+}
+
+@media (min-height: 690px) {
+  .additionalNavMenu li {
+    margin: 3rem auto;
+  }
+}
+
+@media (min-height: 735px) {
+  .additionalNavMenu li {
+    margin: 3.25rem auto;
+  }
 }

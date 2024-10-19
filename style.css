@@ -239,14 +239,14 @@ a {
   #hero {
     background-image: url(Assets/Images/Logryan05.png);
     background-size: auto 100vh;
-    /* background-position-x: -1.8rem; */
     margin-top: -2rem;
+    background-position-x: -1rem;
   }
 
   .heroContentContainer {
     width: 47%;
     top: 5.5rem;
-    margin-left: .25rem;
+    margin-left: 1rem;
   }
 
 /* Contact Page*/

@@ -578,7 +578,7 @@ input[type="submit"] {
   position: relative;
   top: 6rem;
   left: 1.25rem;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .portfolioShowcaseContainer {

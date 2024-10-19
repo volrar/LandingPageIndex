@@ -253,7 +253,7 @@ a {
 
 /* Contact Form */
 
-.firstContent {
+.contactHeroContainer {
   margin: 0 auto;
   margin-top: -.25rem;
   padding: 0;
@@ -264,14 +264,14 @@ a {
   background-image: url(Assets/Images/0G2A3354.JPG);
 }
 
-.firstContent h3 {
+.contactHeroContainer p {
   position: relative;
   top: 4rem;
   left: .5rem;
   width: 60%;
 }
 
-.secondContent {
+.quickContainer {
   padding-bottom: 3rem;
   margin: 0;
   margin-top: -.4rem;
@@ -279,7 +279,7 @@ a {
   /* background-color: #3b3b3b; */
 }
 
-.secondContent > h3 {
+.quickContainer > h3 {
   padding: 1.25rem;
   text-align: center;
   position: relative;
@@ -462,13 +462,14 @@ input[type="submit"] {
   margin: 1rem auto;
   width: 95%;
   text-align: center;
+  /* background-color: red; */
 }
 
 .informationList {
   position: relative;
-  width: 90%;
-  margin: auto -.5rem;
-  /* background-color: purple; */
+  width: 85%;
+  padding-top: .5rem;
+  margin: auto;
   list-style-type: none;
   /* background-color: green; */
 }
@@ -549,6 +550,11 @@ input[type="submit"] {
   margin: 2rem 0;
   font-size: 1.75rem;
   width: 100%;
+  /* background-color: red; */
+}
+
+.aboutMeContainer {
+  padding: 1rem 0;
   /* background-color: red; */
 }
  

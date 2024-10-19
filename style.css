@@ -258,7 +258,7 @@ a {
   margin-top: -.25rem;
   padding: 0;
   width: 100%;
-  height: 20rem;
+  height: 18rem;
    background-size: cover;
   background-position: left;
   background-image: url(Assets/Images/0G2A3354.JPG);
@@ -291,6 +291,7 @@ a {
   justify-content: center;
   padding: .5rem;
   margin: 0;
+  /* background-color: red; */
 }
 
 .quickLinkContainer li {
@@ -307,7 +308,7 @@ a {
 #faq {
   /* background-color: #496b78; */
   width: 100%;
-  margin: -1rem 0;
+  margin: -2rem 0;
   padding: 2rem 0;
   padding-bottom: 1rem;
 }
@@ -375,7 +376,7 @@ a {
 
 #formContainer {
   width: 90%;
-  height: 30rem;
+  height: 35rem;
   margin: 0 auto;
   position: relative;
   margin-bottom: 2rem;
@@ -412,7 +413,7 @@ input {
 
 textarea {
   padding: 0;
-  height: 10rem;
+  height: 12rem;
   margin-top: 1rem;
   border-radius: .5rem;
   border: none;
@@ -434,6 +435,7 @@ input[type="submit"] {
 .informationContainer {
   width: 95%;
   margin: auto;
+  padding: .1rem 0;
   /* background-color: purple; */
 }
 
@@ -442,6 +444,7 @@ input[type="submit"] {
   padding: 0;
   margin: auto;
   margin-bottom: .5rem;
+  /* background-color: green; */
 }
 
 .informationDisclaimer p {
@@ -524,7 +527,7 @@ input[type="submit"] {
 }
 
 .aboutHero {
-  height: 19.5rem;
+  height: 17rem;
   width: 100%;
   /* background-color: red; */
   background: url(Assets/Images/0G2A3283.JPG);
@@ -533,18 +536,20 @@ input[type="submit"] {
 }
 
 .aboutHeroText {
-  width: 45%;
+  width: 65%;
   height: fit-content;
   position: relative;
-  top: .5rem;
-  margin: 2rem;
+  top: 1.5rem;
+  margin: 1rem;
   /* background-color: blue; */
 }
 
 .heroText {
   color: white;
-  margin: 2rem auto;
-  font-size: 2rem;
+  margin: 2rem 0;
+  font-size: 1.75rem;
+  width: 100%;
+  /* background-color: red; */
 }
  
 .aboutTitle {
@@ -565,19 +570,20 @@ input[type="submit"] {
 
 .portfolioHeroContainer {
   /* background-color: white; */
-  height: 25rem;
+  height: 17rem;
   margin: 0;
   background: url(Assets/Images/Logryan03-1.png);
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat;
+  background-position-y: -2rem;
+  background-position-x: 4rem;
 }
 
 .portfolioHeroText {
   width: 65%;
   position: relative;
-  top: 2rem;
-  left: 1.25rem;
+  top: 5.5rem;
+  left: 1rem;
   /* background-color: blue; */
 }
 

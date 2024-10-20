@@ -1,30 +1,77 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: inline-block;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* General Styles */
-body {
-  background-color: #3b3b3b;
-    margin: 0 auto;
-    color: #c9c9bb;
-  overflow-x: hidden;
-  }
-  
-  nav {
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  nav {
+    margin: 0;
   }
   h3 {
     font-size: 2rem;
     margin: 2%
   }
-  
   p {
     color: #c9c9bb;
     font-size: 1.3rem;
   }
-  
   li {
     font-size: 1.5rem;
   }
-  
   .inactive {
     display: none;
   }
@@ -59,13 +106,14 @@ a {
 */
 
 .navigation { /*Main Navigation Container */
-    position:fixed;
+    position: fixed;
     display: flex;
     top: 0;
+    margin: 0;
     width: 100dvw;
     height: 3rem;
     z-index: 99;
-    background: #0c0c0ccc;
+    /* background: #0c0c0ccc; */
   }
 
   .mainNavigation { /*Main Navigation Links (Always Visible */
@@ -92,7 +140,7 @@ a {
 
   #additionalNav { /* Additional Navigation (Hidden Initially) */
     position: absolute;
-    margin-top: 0;
+    margin: 0;
     height: 100vh;
     width: 100%;
     transform: translateX(150vw); /* Makes the Additional Navigation Hidden by Moving Off Screen */
@@ -190,88 +238,45 @@ a {
   
   /* End Navigation */
 
-  #hero{ /* Landing Page Hero Section */
+  #hero {
     position: absolute;
-    width: 100dvw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    padding: 0;
     height: 100dvh;
-    margin: 0;
-    background-image: url(Assets/Images/Logryan05.png);
-    background-position-y: -35vh;
-    background-position-x: -15vw;
+    width: 100dvw;
   }
 
-@media (min-width: 375px) and (min-height: 667px) {
-  #hero {
-    background-size: cover;
-    background-position-y: 0;
-    background-position-x: -3vh;
+  .heroLandingContent {
+    padding: 0;
+    min-width: fit-content;
+    width: 100%;
+    min-height: fit-content;
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    background-color :red;
   }
-}
-    
-@media (min-width: 414px) and (min-height: 896px) {
-  #hero {
-    background-position-x: -13vh;
-  }
-}
-
-@media (min-width: 390px) and (min-height: 844px) {
-  #hero {
-
-    background-position-x: -12vh;
-  }
-}
-
-@media (min-width: 360px) and (min-height: 740px) {
-  #hero {
-    background-size: 100dvh;
-    background-position-y: -8vh;
-    background-position-x: -18vh;
-  }
-}
-
-@media (min-width: 540px) and (min-height: 720px) {
-  #hero {
-    background-position: left;
-  }
-}
-
-@media (min-width: 344px) and (min-height: 882px) {
-  #hero {
-    background-size: 100dvh;
-    background-position-y: -8vh;
-    background-position-x: -15vh;
-  }
-}
-
-@media (min-width: 853px) and (min-height: 1280px) {
-  #hero {
-    background-position: left;
-  }
-}
-
-@media (min-width: 1024px) and (min-height: 600px) {
-#hero {
-    background-position-y: -85vh;
-    background-position-x: -125vh;
-}
-}
-
-@media (min-width: 1280px) and (min-height: 800px) {
-
-#hero {
-  background-size: cover;
-  background-position-y: -15vh;
-  background-position-x: -125vh;
-}
-}
 
   .heroContentContainer { /* Landing Page Hero Section Content Container */
     position: relative;
-    margin: 10vh 8vw;
+    /* margin: 15vh 5vw; */
     height: fit-content;
-    min-width: 12rem;
-    width: 35%;
-    /* background-color: blue; */
+    min-width: 5rem;
+    width: 50vw;
+    background-color: blue;
+  }
+
+  .heroLandingImage {
+    bottom: 0;
+    min-width: 30%;
+    width: auto;
+    height: 100vh;
+    min-height: 300px;
+    position: relative;
+    top: 10vh;
+    /* background-color: red; */
   }
 
   .heroText p { /* Landing Page Hero Section Content Text */
@@ -615,12 +620,11 @@ input[type="submit"] {
 }
 
 .aboutHero {
-  height: 17rem;
+  height:45vw;
   width: 100%;
   /* background-color: red; */
-  background: url(Assets/Images/0G2A3283.JPG);
+  background: url(Assets/Images/Logryan03-1.png);
   background-size: cover;
-  background-position: left;
 }
 
 .aboutHeroText {
@@ -663,7 +667,7 @@ input[type="submit"] {
 
 .portfolioHeroContainer {
   /* background-color: white; */
-  height: 17rem;
+  height: 20rem;
   margin: 0;
   background: url(Assets/Images/Logryan03-1.png);
   background-size: cover;

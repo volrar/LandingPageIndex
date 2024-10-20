@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
 	line-height: 1;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 ol, ul {
 	list-style: none;
@@ -245,33 +245,37 @@ a {
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-color: green;
+
   }
 
   .heroLandingContent {
     padding: 0;
-    margin: 0 auto;
+    margin-top: 3rem;
     width: 100%;
+    min-height: fit-content;
     height: fit-content;
+    max-height: 1000px;
     display: flex;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color :red;
   }
 
   .heroContentContainer { /* Landing Page Hero Section Content Container */
     position: relative;
     height: fit-content;
-    width: 50%;
+    width: 100%;
     margin-top: 10%;
     background-color: blue;
   }
 
   .heroLandingImage {
-    width: 35vw;
-    min-width: 35%;
-    height: auto;
+    width: auto;
+    max-width: 50%;
+    min-width: 15%;
+    height: max-content;
     position: relative;
-    /* background-color: red; */
+    top: 2.45rem;
+    background-color: purple;
   }
 
   .heroText p { /* Landing Page Hero Section Content Text */

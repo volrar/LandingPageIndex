@@ -5,10 +5,12 @@ body {
   background-color: #3b3b3b;
     margin: 0 auto;
     color: #c9c9bb;
-    font-size: 1.3rem;
-
+  overflow-x: hidden;
   }
   
+  nav {
+
+  }
   h3 {
     font-size: 2rem;
     margin: 2%
@@ -40,226 +42,225 @@ a {
     list-style-type: none;
   }
 
-
-  @font-face {
-    font-family: Feasibly;
-    src: url(Assets/Fonts/FeasiblySingleLine-z8D90.ttf);
-  }
-
-  @font-face {
-    font-family: Basheq;
-    src: url(Fonts/BasheqVintageDemoVersionRegular-gwpmE.otf);
-  }
-
-  @font-face {
-    font-family: Horesland;
-    src: url(Assets/Fonts/WtfHorselandDemo-4n3y6.ttf);
-  }
-
   /* End General Styles */
 
 /* Navigation */
 
 /* Main Navigation */
 
-.navigation {
+.navigation { /*Main Navigation Container */
     position:fixed;
     display: flex;
-    justify-content: space-between;
+    top: 0;
     width: 100%;
     height: 3rem;
-    top: 0;
+    z-index: 99;
     background: #0c0c0ccc;
-    font-size: 100%;
-    z-index: 3;
   }
 
-  .mainNavigation {
-    width: 80%;
-    align-self: center;
+  .mainNavigation { /*Main Navigation Links (Always Visible */
     display: flex;
     justify-content: space-around;
-    background-color: green;
-  }
-  
-  .logoContainer {
-    width: 20%;
-    max-width: 5rem;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: .25rem;
-    z-index: 5;
-    background-color: red;
+    width: 100vw;
+    height: 100%;
   }
 
-  /* Additional Navigation (Hidden Initially) */
-  #additionalNav {
+  .mainNavigation a { /*Main Navigation Anchor Tag Styling (Always Visible*/
+    align-self: center;
+    font-size: calc(.9rem + 1vw);
+  }
+  
+  .logoContainer { /*Main Navigation Logo Container*/
+    display: flex;
+    justify-content: center;
+    min-width: fit-content;
+    width: 10vw;
+    max-width: 5rem;
     height: 100%;
-    position: fixed;
-    width: 100%;
+    z-index: 5;
+  }
+
+  #additionalNav { /* Additional Navigation (Hidden Initially) */
+    position: absolute;
     margin-top: 0;
-    transform: translateX(150vw);
-    transition: transform 500ms ease-in-out;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(150vw); /* Makes the Additional Navigation Hidden by Moving Off Screen */
+    transition: transform 600ms ease-in-out;
     background: linear-gradient(180deg, #000000ea 0%, #000000be 100%);
   }
   
-  .additionalNavMenu {
+  .additionalNavMenu { /* Additional Navigation List Element Container*/
     position: relative;
-    height: 100vh;
-    padding: 1rem;
-    background-color: blue;
+    margin: 15vh 0;
+    min-height: fit-content;
+    height: 100%;
+    /* background-color: blue; */
   }
   
-  .additionalNavMenu li {
+  .additionalNavMenu li { /* Additional Navigation List Elements */
+    position: relative;
+    margin: 5vh -1.25rem;
+    min-width: fit-content;
+    width: 100%;
+    min-height: fit-content;
+    height: 3vh;
     list-style: none;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    margin: auto;
-    width: 80%;
-    min-width: fit-content;
-    top: 10%;
-    position: relative;
-    text-align: center;
-    background-color: red;
+    /* background-color: red; */
   }
   
-  .additionalNavMenu li a {
-    color: #d4d0cc;
+  .additionalNavMenu li a { /* Additional Navigation Anchor Tag Styling */
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    font-size: calc(1.5rem + .75vw);
+    color: #d4d0cc;
   }
   
-  .additionalLink:hover {
+  .additionalLink:hover { /*Make Anchor Tags Scale up on Mouse Hover */
     scale: 1.1;
     /* color: red; */
   }
   
-  input[type="checkbox"]:checked ~ #additionalNav {
+  input[type="checkbox"]:checked ~ #additionalNav { /* Move Additional Nav Onto the Screen */
     transform: translateX(0vw);
   }
   
-  input[type="checkbox"] {
+  input[type="checkbox"] { /* Hides the Basic Checkbox Created for Hamburger Menu */
     display: none;
   }
   
-  .hamburgerMenu {
+  .hamburgerMenu { /*Hamburger Menu Container */
+    align-self: center;
+    align-content: center;
+    min-height: fit-content;
+    height: 100%;
+    min-width: fit-content;
+    width: 15%;
+    max-width: 5rem;
     cursor: pointer;
     z-index: 99;
-    height: fit-content;
-    align-self: center;
-    margin: .5rem;
-    width: 1.5rem;
-    background-color: red;
+    /* background-color: red; */
   }
   
-  .bar {
+  .bar { /* Bars for the Hmaburger Menu */
     transition: all 0.5s;
-    height: 3px;
-    width: 100%;
-    border-radius: 1rem;
+    position: relative;
+    margin: .25rem;
+    min-height: .15rem;
+    height: .5vw;
+    max-height: .25rem;
+    min-width: 1.25rem;
+    width: 5vw;
+    max-width: 2.5rem;
+    border-radius: .25rem;
     background-color: #d4d0cc;
-    margin-top: 3px;
   }
 
-  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar {
+  /* Bar Movement on Hamburger Menu Click */
+
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar { /*When input is checked rotate bars 315 deg */
     transform: rotate(315deg);
   }
   
-  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(1) {
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(1) { /*Make the first bar opaque */
     opacity: 0;
   }
   
-  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(3) {
+  input[type="checkbox"]:checked ~ .hamburgerMenu > .bar:nth-child(3) { /*Rotate the Last Bar 225deg and move up to form 'x' */
     transform: rotate(225deg);
     position: relative;
-    top: -.38rem;
+    top: -.45rem;
   }
+
+  /* End Bar Movement on Click */
   
   /* End Navigation */
 
-  #hero{
-    position: relative;
-    width: 100vw;
+  #hero{ /* Landing Page Hero Section */
+    position: absolute;
+    width: 175vw;
     height: 100vh;
-    background-repeat: no-repeat;
+    margin: 0;
+    background-image: url(Assets/Images/Logryan05.png);
+    background-position-y: -25rem;
+    background-position-x: -15rem;
   }
 
-  .heroContentContainer {
-    width: fit-content;
-    height: fit-content;
+  .heroContentContainer { /* Landing Page Hero Section Content Container */
     position: relative;
-  }
-
-  .heroText {
-    color: #c9c9bb;
-    margin: .5rem;
-  }
-
-  .heroText p {
+    margin: 8vh 5vw;
     height: fit-content;
-    font-family: Basheq;
+    min-width: 12rem;
+    width: 25%;
+    /* background-color: blue; */
   }
 
-  span {
-    font-family: "Feasibly";
-    font-weight:bolder;
+  .heroText p { /* Landing Page Hero Section Content Text */
+    /* background-color: red; */
+    height: auto;
+    margin: 0;
+    font-size: calc(.75rem + 5vw);
   }
 
-
-  .heroButton {
-    background: #b0b0b0;
-    color: #3b3b3b;
-    border-radius: 2rem;
-    height: 2.5rem;
-    width: 10rem;
+  .heroButtonContainer { /* Landing Page Hero Section Content Button Container */
     display: flex;
-    margin: 3rem auto;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    outline: 2px solid #3b3b3b;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 10rem;
+    /* background-color: green;   */
+  }
+
+  .heroButton { /* Landing Page Hero Section Content Buttons */
+    display: flex;
+    align-self: center;
+    margin: 1rem;
+    min-width: 6rem;
+    width:40%;
+    max-width: 13rem;
+    height: 30%;
     font-family: Georgia, Times, serif;
-  }
-
-  .heroButton:hover {
-    background: #c9c9bb;
     color: #3b3b3b;
+    cursor: pointer;
+    border-radius: 2rem;
+    background: #b0b0b0;
+    outline: 2px solid #3b3b3b;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
 
-  .heroButton:nth-child(2) {
-    background: #6493a5;
-    color: #3b3b3b;
-  }
-
-  .heroButton:nth-child(2):hover {
-    background: #c9c9bb;
-    color: #3b3b3b;
-  }
-
-  .heroButtonTextWrap {
+  .heroButtonTextWrap { /* Landing Page Hero Section Content Buttons Text Container*/
     margin: auto;
     align-self: center;
   }
 
-  .buttonMainText {
-    color: black;
+  .buttonMainText { /* Landing Page Hero Section Content Buttons Text */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
   }
 
-  #hero {
-    background-image: url(Assets/Images/Logryan05.png);
-    background-size: auto 100vh;
-    margin-top: -2rem;
-    background-position-x: -1rem;
+  /* Landing Page Hero Section Content Button Hover Effects */
+
+  .heroButton:hover {
+    color: #3b3b3b;
+    background: #c9c9bb;
   }
 
-  .heroContentContainer {
-    width: 47%;
-    top: 5.5rem;
-    margin-left: 1rem;
+  .heroButton:nth-child(2) {
+    color: #3b3b3b;
+    background: #6493a5;
   }
+
+  .heroButton:nth-child(2):hover {
+    color: #3b3b3b;
+    background: #c9c9bb;
+  }
+
+  /* Landing Page Hero Section Content Button Hover Effects */
 
 /* Contact Page*/
 
@@ -267,10 +268,10 @@ a {
 
 .contactHeroContainer {
   margin: -1.25rem auto;
-  padding: 0;
   width: 100%;
   height: 18rem;
-   background-size: cover;
+  padding: 0;
+  background-size: cover;
   background-position: left;
   background-image: url(Assets/Images/0G2A3354.JPG);
 }
@@ -284,51 +285,51 @@ a {
 }
 
 .quickContainer {
-  padding-bottom: 2rem;
   margin: 0;
   height: auto;
+  padding-bottom: 2rem;
   /* background-color: green; */
 }
 
 .quickContainer > h3 {
+  position: relative;
   margin-top: 2.5rem;
   text-align: center;
-  position: relative;
 }
 
 .quickLinkContainer {
-  text-align: center;
-  list-style-type: none;
-  justify-content: center;
-  padding: .5rem;
   margin-top: 2rem;
   margin-bottom: 0;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  padding: .5rem;
   /* background-color: red; */
 }
 
 .quickLinkContainer li {
+  margin: 1rem auto;
   width: 85%;
   height: 4rem;
-  margin: 1rem auto;
-  outline: 1px solid #c9c9bb;
-  border-radius: .5rem;
   align-content: center;
+  border-radius: .5rem;
+  outline: 1px solid #c9c9bb;
 }
 
 /* Frequently Asked Questions */
 
 #faq {
   /* background-color: #496b78; */
-  width: 100%;
   margin: -2rem 0;
+  width: 100%;
   padding: 2rem 0;
   padding-bottom: 1rem;
 }
 
 .faqContianer h3 {
+  margin: auto;
   align-self: center;
   text-align: center;
-  margin: auto;
   /* background-color: grey; */
 }
 
@@ -736,184 +737,3 @@ input[type="submit"] {
 
 /* Media Queirys */
 
-@media (min-width: 225px ) and (min-height: 100px){
-  .navigation {
-    font-size: .75rem;
-  }
-  .mainNavigation {
-    width: 60%;
-  }
-  .additionalNavMenu li {
-    font-size: 1rem;
-    margin: 1rem auto;
-  }
-  .additionalNavMenu {
-    margin: 0;
-  }
-}
-
-@media (min-width: 260px) {
-
-  .navigation {
-    font-size: 1rem;
-  }
-
-}
-
-@media (min-width: 350px) and (min-height: 345px) {
-  .navigation {
-    font-size: 1.3rem;
-  }
-  .mainNavigation {
-    width: 70%;
-  }
-  .additionalNavMenu li {
-      font-size: 1.25rem;
-      margin: 1.25rem auto;
-  }
-}
-
-@media (min-width: 390px) and (min-height: 844px) {
-
-  #hero {
-    height: 98vh;
-    background-position-x: -4rem;
-  }
-
-}
-
-@media (min-width: 360px) and (min-height: 740px) {
-
-  #hero {
-    height: 98vh;
-    background-position-x: -4rem;
-  }
-
-}
-
-@media (min-width: 412px) and (min-height: 915px) {
-
-  #hero {
-    height: 98vh;
-    background-position-x: -6rem;
-  }
-
-  .heroContentContainer {
-    width: 55%;
-  }
-
-  .heroText p {
-    font-size: 3rem;
-  }
-
-  .heroButtonContainer {
-    margin: 5rem auto;
-    /* background-color: yellow; */
-  }
-
-}
-
-@media (min-width: 414px) and (min-height: 896px) {
-
-  #hero {
-    height: 98vh;
-    background-position-x: -4rem;
-  }
-
-  .heroText {
-    width: 15rem;
-    /* background-color: red; */
-  }
-
-  .heroText p{
-    font-size: 3rem;
-  }
-
-}
-
-@media (min-width: 450px) and (min-height: 390px) {
-  .mainNavigation {
-    width: 75%;
-  }
-
-  .hamburgerMenu {
-    margin: 1rem;
-  }
-
-  .additionalNavMenu li {
-    font-size: 1.5rem;
-    margin: 1.5rem auto;
-  }
-}
-
-@media (min-width: 550px) {
-  .mainNavigation {
-    width: 80%;
-  }
-
-  .hamburgerMenu {
-    margin: 1.5rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .mainNavigation {
-    width: 85%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .mainNavigation {
-    width: 90%
-  }
-}
-
-/* @media (min-height: 390px) {
-  .additionalNavMenu li {
-    font-size: 1.5rem;
-    margin: 1.25rem auto;
-  } */
-
-
-@media (min-height: 435px) {
-  .additionalNavMenu li {
-    font-size: 1.75rem;
-    margin: 1.5rem auto;
-  }
-}
-
-@media (min-height: 490px) {
-  .additionalNavMenu li {
-    margin: 2rem auto;
-  }
-}
-
-@media (min-height: 550px) {
-  .additionalNavMenu li {
-    margin: 2.25rem auto;
-  }
-}
-
-@media (min-height: 600px) {
-  .additionalNavMenu li {
-    margin: 2.5rem auto;
-  }
-}
-
-@media (min-height: 645px) {
-  .additionalNavMenu li {
-    margin: 2.75rem auto;
-  }
-}
-
-@media (min-height: 690px) {
-  .additionalNavMenu li {
-    margin: 3rem auto;
-  }
-}
-
-@media (min-height: 735px) {
-  .additionalNavMenu li {
-    margin: 3.25rem auto;
-  }
-}

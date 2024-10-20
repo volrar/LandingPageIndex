@@ -48,11 +48,21 @@ a {
 
 /* Main Navigation */
 
+/* TODO: 
+
+   - Current Index/Hero Style work well for resizing on desktop, but on the phone you can 
+  zoom out and the background it all messed up. Make adjustments or Media Queiries
+  for Mobile Viewports as necessary. 10/19/2024
+
+  - 
+
+*/
+
 .navigation { /*Main Navigation Container */
     position:fixed;
     display: flex;
     top: 0;
-    width: 100%;
+    width: 100dvw;
     height: 3rem;
     z-index: 99;
     background: #0c0c0ccc;
@@ -61,7 +71,7 @@ a {
   .mainNavigation { /*Main Navigation Links (Always Visible */
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     height: 100%;
   }
 

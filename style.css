@@ -88,7 +88,12 @@ a {
   ul {
     list-style-type: none;
   }
-
+  
+.contentOne{
+  height: 100%;
+  background-color: red;
+}
+  
   /* End General Styles */
 
 /* Navigation */
@@ -239,13 +244,13 @@ a {
   /* End Navigation */
 
   #hero {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column; 
     padding: 0;
     height: 100vh;
     width: 100%;
-
+    margin-top: 3rem;
   }
 
   .heroLandingContent {
@@ -257,7 +262,7 @@ a {
     max-height: 1000px;
     display: flex;
     overflow: hidden;
-    background-color :red;
+    /* background-color :red; */
   }
 
   .heroContentContainer { /* Landing Page Hero Section Content Container */
@@ -265,7 +270,7 @@ a {
     height: fit-content;
     width: 100%;
     margin-top: 10%;
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .heroLandingImage {
@@ -275,7 +280,7 @@ a {
     height: max-content;
     position: relative;
     top: 2.45rem;
-    background-color: purple;
+    /* background-color: purple; */
   }
 
   .heroText p { /* Landing Page Hero Section Content Text */

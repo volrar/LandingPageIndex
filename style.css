@@ -248,18 +248,18 @@ a {
     display: flex;
     flex-direction: column; 
     padding: 0;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     margin-top: 3rem;
+    background-image: url(Assets/Images/trying.jpg);
+    background-size: cover;
+    background-color: blue;
   }
 
   .heroLandingContent {
     padding: 0;
     margin-top: 3rem;
     width: 100%;
-    min-height: fit-content;
-    height: fit-content;
-    max-height: 1000px;
     display: flex;
     overflow: hidden;
     /* background-color :red; */
@@ -270,7 +270,7 @@ a {
     height: fit-content;
     width: 100%;
     margin-top: 10%;
-    /* background-color: blue; */
+    background-color: blue;
   }
 
   .heroLandingImage {

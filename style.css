@@ -252,7 +252,7 @@ a {
     width: 100%;
     /* background-image: url(Assets/Images/trying.jpg);
     background-size: cover; */
-    background-color: green;
+    /* background-color: green; */
   }
 
 /* Media Break at  */
@@ -264,7 +264,7 @@ a {
     display: flex;
     overflow-y: scroll;
     /* margin: 20vh auto; */
-    background-color :pink;
+    /* background-color :pink; */
   }
 
   .heroContentContainer { /* Landing Page Hero Section Content Container */
@@ -273,9 +273,17 @@ a {
     flex-direction: column;
     height: fit-content;
     width: fit-content;
-    max-width: 60vw;
-    margin: 15vw auto;
+    max-width: 50vw;
+    margin: 20vw auto;
     background-color: blue;
+  }
+
+  @media (max-height: 850px) {
+
+    .heroContentContainer {
+      margin-top: 15vh;
+    }
+
   }
 
   .heroLandingImage {
@@ -284,15 +292,15 @@ a {
     min-width: 40%;
     height: 100%;
     position: relative;
-    margin-bottom: 0;
-    background-color: purple;
+    top: 20vh;
+    /* background-color: purple; */
   }
 
   .heroText p { /* Landing Page Hero Section Content Text */
-    background-color: red;
+    /* background-color: red; */
     height: auto;
     margin: 5vh 1vw;
-    font-size: calc(3rem + 1vw);
+    font-size: calc(1rem + 3vh);
   }
 
   .heroButtonContainer { /* Landing Page Hero Section Content Button Container */
@@ -300,17 +308,17 @@ a {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    width: 100%;
+    min-width: fit-content;
+    width: 75%;
     height: fit-content;
-    margin: 0;
+    margin: 0 auto;
     background-color: green;  
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .heroButtonContainer {
       flex-direction: row;
     }
-
   }
 
   .heroButton { /* Landing Page Hero Section Content Buttons */
@@ -318,9 +326,11 @@ a {
     align-self: center;
     min-width: 8rem;
     width: 20vw;
-    max-width: 12rem;
-    min-height: 2.5rem;
-    margin: 2rem auto;
+    max-width: 10rem;
+    min-height: 2rem;
+    height: 5vh;
+    max-height: 2.5rem;
+    margin: .75rem auto;
     font-family: Georgia, Times, serif;
     color: #3b3b3b;
     cursor: pointer;

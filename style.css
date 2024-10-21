@@ -281,11 +281,11 @@ a {
   .heroLandingImage {
     width: auto;
     max-width: 50%;
-    min-width: 15%;
+    min-width: 40%;
     height: 100%;
     position: relative;
-    top: 12rem;
-    /* background-color: purple; */
+    margin-bottom: 0;
+    background-color: purple;
   }
 
   .heroText p { /* Landing Page Hero Section Content Text */
@@ -320,7 +320,7 @@ a {
     width: 20vw;
     max-width: 12rem;
     min-height: 2.5rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     font-family: Georgia, Times, serif;
     color: #3b3b3b;
     cursor: pointer;
@@ -405,7 +405,7 @@ a {
 }
 
 .quickLinkContainer li {
-  margin: 1rem auto;
+  margin: 2rem auto;
   width: 85%;
   height: 4rem;
   align-content: center;
@@ -420,7 +420,7 @@ a {
   margin: -2rem 0;
   width: 100%;
   padding: 2rem 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .faqContianer h3 {
@@ -431,7 +431,7 @@ a {
 }
 
 .faqContianer {
-  padding: 1rem;
+  padding: 2rem;
   /* background-color: blue; */
 }
 
@@ -456,9 +456,9 @@ a {
 
 .answer {
   padding: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: fit-content;
-  margin:  1rem;
+  margin:  2rem;
 }
 
 /* End Frequently Asked Questions */
@@ -476,7 +476,7 @@ a {
 }
 
 .contactInfo p {
-  margin:  1rem 2rem;
+  margin:  2rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -524,7 +524,7 @@ input {
 textarea {
   padding: 0;
   height: 12rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: .5rem;
   border: none;
 }
@@ -568,7 +568,7 @@ input[type="submit"] {
 
 .informationTitle {
   font-size: 2rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
   width: 85%;
   text-align: center;
   /* background-color: red; */
@@ -608,7 +608,7 @@ input[type="submit"] {
 .informationSubList li {
   list-style-type: disc;
   width: 75%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   font-size: 1.3rem;
   text-align: left;
 }
@@ -649,7 +649,7 @@ input[type="submit"] {
   height: fit-content;
   position: relative;
   top: 1.5rem;
-  margin: 1rem;
+  margin: 2rem;
   /* background-color: blue; */
 }
 
@@ -662,7 +662,7 @@ input[type="submit"] {
 }
 
 .aboutMeContainer {
-  padding: 1rem 0;
+  padding: 2rem 0;
   /* background-color: red; */
 }
  
@@ -675,7 +675,7 @@ input[type="submit"] {
 .aboutText {
   width: 85%;
   margin: .5rem auto;
-  text-indent: 1rem;
+  text-indent: 2rem;
 }
 
 /* End About Me Page */
@@ -697,7 +697,7 @@ input[type="submit"] {
   width: 65%;
   position: relative;
   top: 5.5rem;
-  left: 1rem;
+  left: 2rem;
   /* background-color: blue; */
 }
 
@@ -708,7 +708,7 @@ input[type="submit"] {
 .portfolioShowcaseText {
   margin: 0 auto;
   width: 85%;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .portfolioCard {
@@ -721,7 +721,7 @@ input[type="submit"] {
 .projectImageContainer {
   height: 12rem;
   margin: 1.25rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: #c9c9bb;
 }
 
@@ -782,7 +782,7 @@ input[type="submit"] {
 .projectDescription {
   margin: auto;
   width: 85%;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-size: 1.15rem;
   /* background-color: purple; */
 }

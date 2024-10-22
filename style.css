@@ -532,7 +532,7 @@ a {
   margin: 0 auto;
   position: relative;
   margin-bottom: 2rem;
-  /* background-color: red; */
+  /* background-color: blue; */
 }
 
 #contactForm {
@@ -581,7 +581,7 @@ label {
 }
 
 textarea {
-  padding: 0;
+  padding: 1rem;
   width: 90%;
   height: 12rem;
   margin: auto;
@@ -631,8 +631,13 @@ input[type="submit"] {
 
 .informationDisclaimer p {
   width: 90%;
-  margin: 2vh auto;
+  margin: 5vh auto;
   /* background-color: green; */
+}
+
+.firstDisclaimer {
+  margin-top: -2rem;
+  /* background-color: red; */
 }
 
 .informationList {

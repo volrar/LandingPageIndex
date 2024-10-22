@@ -400,8 +400,7 @@ a {
 .quickContainer {
   margin: auto;
   height: auto;
-  max-width: 40%;
-  width: 30vw;
+  width: 90%;
   min-width: fit-content;
   /* background-color: green; */
 }
@@ -413,18 +412,26 @@ a {
 }
 
 .quickLinkContainer {
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin: auto;
   justify-content: center;
   list-style-type: none;
   text-align: center;
   padding: .5rem;
+  max-width: 45%;
+  min-width: 475px;
   /* background-color: red; */
+}
+
+@media (max-width: 575px) {
+  .quickLinkContainer {
+    min-width: 90%;
+  }
 }
 
 .quickLinkContainer li {
   margin: 2rem auto;
   width: 85%;
+  max-width: 600px;
   height: 4rem;
   align-content: center;
   border-radius: .5rem;
@@ -436,7 +443,7 @@ a {
 #faq {
   /* background-color: #496b78; */
   margin: auto;
-  width: 100%;
+  width: 100vw;
   padding: 1rem 0;
 }
 
@@ -489,7 +496,7 @@ a {
 
 #contact {
   margin: auto;
-  width: auto;
+  width: 90%;
   /* background-color: #77989f; */
 }
 
@@ -500,15 +507,14 @@ a {
 .contactInfo {
   width: 95%;
   margin: auto;
+  padding: 1rem 0;
   /* background-color: green; */
 }
 
 .contactInfo p {
-  width: 85vw;
-  max-width: 80%;
-  margin: auto;
-  margin: 2rem auto;
-  /* background-color: red; */
+  width: 90%;
+  margin: 1.5rem auto;
+  /* background-color: blue; */
 }
 
 /* .contactContentContainer {
@@ -520,10 +526,9 @@ a {
 }
 
 #formContainer {
-  max-width: 90%;
-  width: 75vw;
+  width: 100%;
   min-width: 50%;
-  height: 35rem;
+  height: fit-content;
   margin: 0 auto;
   position: relative;
   margin-bottom: 2rem;
@@ -532,12 +537,12 @@ a {
 
 #contactForm {
   width: 95%;
-  height: 100%;
+  height: fit-content;
   margin: auto;
   padding-top: .25rem;
   display: flex;
   flex-direction: column;
-  background-color: green;
+  /* background-color: green; */
 }
 
 #contactFormText {
@@ -551,21 +556,23 @@ a {
 }
 
 input {
-  height: 3rem;
+  height: 4rem;
   border-radius: .5rem;
-  width: 10rem;
-  min-width: 290px;
+  width: 100vw;
+  max-width: 390px;
   border: none;
   padding: 0;
-  margin: auto 1rem;
-  background-color: black;
+  margin: auto 4vw;
+  border: 1px solid black;
+  /* background-color: grey; */
 }
 
 label {
-  margin: auto 1rem;
+  font-size: 1.25rem;
+  margin: 1rem 4.5vw;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   input {
     min-width: 0;
     width: 90%;
@@ -575,11 +582,12 @@ label {
 
 textarea {
   padding: 0;
-  width: 88%;
+  width: 90%;
   height: 12rem;
-  margin: auto 1rem;
+  margin: auto;
   margin-top: 2rem;
   border-radius: .5rem;
+  /* background:grey; */
   border: 1px solid black;
 }
 
@@ -601,34 +609,30 @@ input[type="submit"] {
 
 .informationContainer {
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: .5rem 0;
   /* background-color: purple; */
 }
 
-.informationDisclaimer {
+.informationTitle {
+  font-size: 2rem;
+  margin: 1vh auto;
   width: 85%;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.informationDisclaimer {
+  width: 90%;
   padding: 0;
-  margin: 0 auto;
+  margin: 1vh auto;
   /* background-color: green; */
 }
 
 .informationDisclaimer p {
   width: 90%;
-  margin: 0 auto;
-  /* background-color: yellow; */
-}
-
-.disclaimer {
-  margin: 0;
-}
-
-.informationTitle {
-  font-size: 2rem;
-  margin: 2rem auto;
-  width: 85%;
-  text-align: center;
-  /* background-color: red; */
+  margin: 2vh auto;
+  /* background-color: green; */
 }
 
 .informationList {

@@ -709,22 +709,22 @@ input[type="submit"] {
 .informationSubList li {
   list-style-type: disc;
   width: 75%;
+  padding: .25rem;
   margin: 2rem auto;
   font-size: 1.3rem;
   text-align: left;
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 .informationSubList {
   margin: auto;
   width: 85%;
-  /* background-color: pink; */
-  margin-bottom: -1rem;
+  padding: .25rem;
+  background-color: pink;
 }
 
 .informationSubList:nth-child(1) {
-  margin: -1rem auto;
-  margin-bottom: -2.5rem;
+  margin: auto;
   width: 100%;
   /* background-color: red; */
 }

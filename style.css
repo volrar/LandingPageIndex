@@ -32,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
 	line-height: 1;
+  color: black;
   /* background-color: cyan; */
 }
 ol, ul {
@@ -66,7 +67,7 @@ table {
     margin: 2%
   }
   p {
-    color: #c9c9bb;
+    /* color: #c9c9bb; */
     font-size: 1.3rem;
   }
   li {
@@ -385,7 +386,7 @@ a {
   position: relative;
   top: 8vh;
   left: 10vw;
-  width: 55%;
+  width: 50%;
   height: fit-content;
   font-size: calc(3rem + 2vw);
 }
@@ -486,15 +487,15 @@ a {
 .faqContianer {
   /* padding: 2rem; */
   margin: 0 auto;
-  width: 100%;
-  background-color: blue;
+  width: 90%;
+  /* background-color: blue; */
 }
 
 .questionsContainer {
   margin: auto;
   width: 100%;
-  max-width: 2048px;
-  background-color: red;
+  max-width: 1280px;
+  /* background-color: red; */
 }
 
 .questionContent {
@@ -526,7 +527,7 @@ a {
 #contact {
   margin: auto;
   width: 100%;
-  background-color: #77989f;
+  /* background-color: #77989f; */
 }
 
 .contactInfo h3 {
@@ -535,10 +536,10 @@ a {
 
 .contactInfo {
   width: 100%;
-  max-width: 2048px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 1rem;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .contactInfo p {
@@ -550,7 +551,7 @@ a {
 
 .contactContentContainer {
   width: 100%;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .contactInfo p:nth-child(3) {
@@ -595,7 +596,7 @@ input {
   max-width: 390px;
   border: none;
   padding: 0;
-  margin: auto 3vw;
+  margin: auto 5vw;
   border: 1px solid black;
   /* background-color: grey; */
 }
@@ -605,7 +606,19 @@ label {
   margin: 1rem 3.5vw;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 1200px) {
+  input {
+    margin: auto 4rem;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 1200px) {
+  input {
+    margin: auto 5vw;
+  }
+}
+
+@media (max-width: 460px) {
   input {
     min-width: 0;
     width: 90%;
@@ -637,14 +650,14 @@ input[type="submit"] {
 
 #additionalInfo {
   width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .informationContainer {
   width: 90%;
   max-width: 2048px;
   margin: auto;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .informationTitle {
@@ -652,7 +665,7 @@ input[type="submit"] {
   margin: 2vh auto;
   width: 85%;
   text-align: center;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .informationDisclaimer {
@@ -660,7 +673,7 @@ input[type="submit"] {
   padding: 0;
   height: auto;
   margin: 3vh auto;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .informationDisclaimer p {
@@ -676,7 +689,7 @@ input[type="submit"] {
 .informationList {
   position: relative;
   width: 90%;
-  padding-top: .5rem;
+  padding: .5rem;
   margin: 2vh auto;
   margin-bottom: 2vh;
   list-style-type: none;
@@ -688,6 +701,7 @@ input[type="submit"] {
   width: 90%;
   font-size: 1.3rem;
   margin: auto;
+  padding: .25rem;
   /* background-color: red; */
 }
 
@@ -713,14 +727,14 @@ input[type="submit"] {
   margin: 2rem auto;
   font-size: 1.3rem;
   text-align: left;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .informationSubList {
   margin: auto;
   width: 85%;
   padding: .25rem;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .informationSubList:nth-child(1) {

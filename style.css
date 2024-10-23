@@ -68,7 +68,7 @@ table {
   }
   p {
     /* color: #c9c9bb; */
-    font-size: 1.3rem;
+    font-size: calc(1.3rem + .5vw);
   }
   li {
     font-size: 1.5rem;
@@ -856,14 +856,14 @@ input[type="submit"] {
   margin: 0 auto;
   width: 100%;
   max-width: 2048px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .portfolioShowcaseText {
   margin: 0 auto;
   width: 90%;
   padding: 2rem;
-  background-color: green;
+  /* background-color: green; */
 }
 
 
@@ -873,7 +873,7 @@ input[type="submit"] {
   width: 90%;
   margin: auto;
   /* outline: 1px solid black; */
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .projectImageContainer {
@@ -888,6 +888,11 @@ input[type="submit"] {
   flex-direction: column;
   justify-content: flex-end;
   background-color: #c9c9bb;
+  cursor: pointer;
+}
+
+.projectImageContainer:hover {
+  scale: 1.03;
 }
 
 .catergoryContainer {
@@ -898,7 +903,7 @@ input[type="submit"] {
   border-radius: 0 0 1rem 1rem;
   min-width: fit-content;
   height: 3rem;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .projectImage {
@@ -907,20 +912,27 @@ input[type="submit"] {
 }
 
 .catergory {
-  background-color: pink;
+  /* background-color: pink; */
   padding: .25rem;
   height: fit-content;
   width: fit-content;
-  margin: auto .5rem;
+  margin: auto 1rem;
   border-radius: .25rem;
+}
+
+@media (max-width: 210px) {
+  .catergory {
+    margin: auto .25rem;
+  }
 }
 
 .projectTitleContainer {
   margin: .5rem auto;
   height: auto;
+  width: fit-content;
   align-content: center;
   padding: .25rem;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .projectTitle {
@@ -935,16 +947,16 @@ input[type="submit"] {
 .projectDescriptionContainer {
   margin: auto;
   height: auto;
-  padding-top: 1rem;
-  background-color: yellow;
+  padding: 2rem 0;
+  /* background-color: yellow; */
 }
 
 .projectDescription {
   margin: auto;
   width: 90%;
   padding: 1rem;
-  font-size: 1.15rem;
-  background-color: purple;
+  font-size: calc(.75rem + 1vw);
+  /* background-color: purple; */
 }
 
 .featuresContainer {
@@ -952,23 +964,23 @@ input[type="submit"] {
   width: 90%;
   padding: .25rem;
   padding-bottom: .25rem;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .featuresTitle {
   width: fit-content;
   position: relative;
   margin: 1rem ;
-  font-size: 1.25rem;
-  background-color: cyan;
+  font-size: calc(.75rem + 1vw);
+  /* background-color: cyan; */
 }
 
 .feature {
-  font-size: 1.25rem;
+  font-size: calc(.75rem + 1vw);
   width: 85%;
   margin: 1.25vh 2rem;
   list-style-type: disc;
-  background-color: grey; 
+  /* background-color: grey;  */
 }
 
 .liveLink {

@@ -163,7 +163,7 @@ a {
   
   .additionalNavMenu li { /* Additional Navigation List Elements */
     position: relative;
-    margin: 5vh auto;
+    margin: 10vh auto;
     min-width: fit-content;
     width: 100%;
     min-height: fit-content;
@@ -383,18 +383,45 @@ a {
 
 .contactHeroContainer p {
   position: relative;
-  top: 10vh;
+  top: 8vh;
   left: 10vw;
-  width: 60%;
+  width: 55%;
   height: fit-content;
-  font-size: calc(2rem + 2vw);
+  font-size: calc(3rem + 2vw);
 }
 
-@media (max-height: 330px) {
+@media (max-height: 220px) {
+  .contactHeroContainer p {
+    font-size: calc(1rem + 2vw);
+  }
+}
+
+@media (min-height: 220px) and (max-height: 280px) {
   .contactHeroContainer p {
     font-size: calc(1.25rem + 2vw);
   }
+}
 
+@media (min-height: 280px) and (max-height: 350px) {
+  .contactHeroContainer p {
+    font-size: calc(1.75rem + 2vw);
+  }
+}
+
+@media (min-height: 350px) and (max-height: 500px) {
+  .contactHeroContainer p {
+    font-size: calc(2rem + 2vw);
+    width: 45%;
+    top: 10vh;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 635px) {
+  .contactHeroContainer p {
+    font-size: calc(2.25rem + 2vw);
+    width: 45%;
+    top: 11vh;
+  }
 }
 
 .quickContainer {
@@ -444,7 +471,7 @@ a {
   /* background-color: #496b78; */
   margin: auto;
   width: 100vw;
-  padding: 1rem 0;
+  padding:0;
 }
 
 .faqContianer h3 {
@@ -464,7 +491,7 @@ a {
 
 .questionsContainer {
   margin: auto;
-  width: 95%;
+  width: 100%;
   /* background-color: red; */
 }
 
@@ -479,15 +506,15 @@ a {
 .question {
   cursor: pointer;
   width: 100%;
-  margin: 5vh 2vw;
+  margin: 5vh auto;
   /* background-color: purple; */
 }
 
 .answer {
   padding: 0;
-  width: fit-content;
-  max-width: 80%;
-  margin:  2rem auto;
+  width: 95%;
+  margin: auto;
+  /* background-color: red; */
 }
 
 /* End Frequently Asked Questions */
@@ -625,18 +652,18 @@ input[type="submit"] {
 .informationDisclaimer {
   width: 90%;
   padding: 0;
-  margin: 1vh auto;
+  margin: 4vh auto;
   /* background-color: green; */
 }
 
 .informationDisclaimer p {
   width: 90%;
-  margin: 5vh auto;
+  margin: 3vh auto;
   /* background-color: green; */
 }
 
 .firstDisclaimer {
-  margin-top: -2rem;
+  margin: -4vh auto;
   /* background-color: red; */
 }
 
@@ -644,7 +671,8 @@ input[type="submit"] {
   position: relative;
   width: 90%;
   padding-top: .5rem;
-  margin: auto;
+  margin: 5vh auto;
+  margin-bottom: 2vh;
   list-style-type: none;
   /* background-color: green; */
 }
@@ -661,8 +689,8 @@ input[type="submit"] {
   /* margin: 1rem auto;
   margin-left: 3rem;
   font-size: 1.3rem; */
-  margin-bottom: .75rem;
-  /* background-color: pink; */
+  margin-bottom: 1rem;
+  /* background-color: purple; */
 }
 
 .informationList:nth-child(3) {
@@ -688,6 +716,8 @@ input[type="submit"] {
 
 .informationSubList:nth-child(1) {
   margin: auto;
+  width: 100%;
+  /* background-color: red; */
 }
 
 /* End Contact Information/Form */

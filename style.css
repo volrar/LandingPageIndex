@@ -469,8 +469,8 @@ a {
 
 #faq {
   /* background-color: #496b78; */
-  margin: auto;
-  width: 100vw;
+  margin: 0 auto;
+  width: 100%;
   padding:0;
 }
 
@@ -479,20 +479,22 @@ a {
   align-self: center;
   text-align: center;
   width: fit-content;
+  padding: 1rem;
   /* background-color: grey; */
 }
 
 .faqContianer {
-  padding: 2rem;
+  /* padding: 2rem; */
   margin: 0 auto;
-  width: 90%;
-  /* background-color: blue; */
+  width: 100%;
+  background-color: blue;
 }
 
 .questionsContainer {
   margin: auto;
   width: 100%;
-  /* background-color: red; */
+  max-width: 2048px;
+  background-color: red;
 }
 
 .questionContent {
@@ -500,13 +502,13 @@ a {
   width: fit-content;
   width: 100%;
   margin: auto;
-  /* background-color: pink; */
+  padding: 1rem;
 }
 
 .question {
   cursor: pointer;
   width: 100%;
-  margin: 5vh auto;
+  margin: 3vh auto;
   /* background-color: purple; */
 }
 
@@ -523,8 +525,8 @@ a {
 
 #contact {
   margin: auto;
-  width: 90%;
-  /* background-color: #77989f; */
+  width: 100%;
+  background-color: #77989f;
 }
 
 .contactInfo h3 {
@@ -532,21 +534,24 @@ a {
 }
 
 .contactInfo {
-  width: 95%;
-  margin: auto;
-  padding: 1rem 0;
-  /* background-color: green; */
+  width: 100%;
+  max-width: 2048px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: green;
 }
 
 .contactInfo p {
   width: 90%;
+  padding: 1rem;
   margin: 1.5rem auto;
   /* background-color: blue; */
 }
 
-/* .contactContentContainer {
+.contactContentContainer {
+  width: 100%;
   background-color: pink;
-} */
+}
 
 .contactInfo p:nth-child(3) {
   text-align: center;
@@ -564,6 +569,7 @@ a {
 
 #contactForm {
   width: 95%;
+  max-width: 1240px;
   height: fit-content;
   margin: auto;
   padding-top: .25rem;
@@ -589,14 +595,14 @@ input {
   max-width: 390px;
   border: none;
   padding: 0;
-  margin: auto 4vw;
+  margin: auto 3vw;
   border: 1px solid black;
   /* background-color: grey; */
 }
 
 label {
   font-size: 1.25rem;
-  margin: 1rem 4.5vw;
+  margin: 1rem 3.5vw;
 }
 
 @media (max-width: 550px) {
@@ -631,29 +637,30 @@ input[type="submit"] {
 
 #additionalInfo {
   width: 100%;
-  /* background-color: blue; */
+  background-color: blue;
 }
 
 .informationContainer {
   width: 90%;
+  max-width: 2048px;
   margin: auto;
-  padding: .5rem 0;
-  /* background-color: purple; */
+  background-color: purple;
 }
 
 .informationTitle {
   font-size: 2rem;
-  margin: 1vh auto;
+  margin: 2vh auto;
   width: 85%;
   text-align: center;
-  /* background-color: red; */
+  background-color: red;
 }
 
 .informationDisclaimer {
   width: 90%;
   padding: 0;
+  height: auto;
   margin: 3vh auto;
-  /* background-color: green; */
+  background-color: yellow;
 }
 
 .informationDisclaimer p {
@@ -663,8 +670,7 @@ input[type="submit"] {
 }
 
 .firstDisclaimer {
-  margin: -4vh auto;
-  /* background-color: red; */
+  margin: -1vh auto;
 }
 
 .informationList {
@@ -706,18 +712,19 @@ input[type="submit"] {
   margin: 2rem auto;
   font-size: 1.3rem;
   text-align: left;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .informationSubList {
   margin: auto;
   width: 85%;
-  background-color: pink;
+  /* background-color: pink; */
   margin-bottom: -1rem;
 }
 
 .informationSubList:nth-child(1) {
-  margin: auto;
+  margin: -1rem auto;
+  margin-bottom: -2.5rem;
   width: 100%;
   /* background-color: red; */
 }

@@ -878,9 +878,9 @@ input[type="submit"] {
 
 .projectImageContainer {
   height: 65vw;
-  min-height: 300px;
+  min-height: 250px;
   max-height: 500px;
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
   margin: 2vh auto;
   border-radius: 2rem;
@@ -935,7 +935,7 @@ input[type="submit"] {
 .projectDescriptionContainer {
   margin: auto;
   height: auto;
-  padding: .75rem;
+  padding-top: 1rem;
   background-color: yellow;
 }
 
@@ -965,8 +965,8 @@ input[type="submit"] {
 
 .feature {
   font-size: 1.25rem;
-  width: 80%;
-  margin: 1.25vh auto;
+  width: 85%;
+  margin: 1.25vh 2rem;
   list-style-type: disc;
   background-color: grey; 
 }

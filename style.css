@@ -750,51 +750,80 @@ input[type="submit"] {
 /* About Hero Content */
 
 #about {
-  margin-top: 3rem;
-  height: fit-content;
-
+  margin: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
 }
 
 .aboutHero {
-  height:45vw;
+   margin: 0 auto;
   width: 100%;
-  /* background-color: red; */
-  background: url(Assets/Images/Logryan03-1.png);
+  height: 65vh;
+  padding: 0;
   background-size: cover;
+  background-position: center;
+  background: url(Assets/Images/Logryan03-1.png);
 }
 
 .aboutHeroText {
-  width: 65%;
-  height: fit-content;
+  width: 50%;
   position: relative;
-  top: 1.5rem;
-  margin: 2rem;
+  height: fit-content;
+  top: 4vh;
+  left: 6vw;
   /* background-color: blue; */
 }
 
 .heroText {
-  color: white;
-  margin: 2rem 0;
-  font-size: 1.75rem;
-  width: 100%;
+  color: black;
+  margin: 5vh auto;
+  font-size: calc(2.25rem + 2vw);
   /* background-color: red; */
+}
+
+@media (max-height: 355px) {
+  .heroText {
+    font-size: calc(1rem + 2vw);
+  }
+}
+
+@media (min-height: 355px) and (max-height: 525px) {
+  .heroText {
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+@media (min-height: 525px) and (max-height: 740px) {
+  .heroText {
+    font-size: calc(2rem + 2vw);
+  }
 }
 
 .aboutMeContainer {
   padding: 2rem 0;
-  /* background-color: red; */
+  width: 90%;
+  max-width: 1480px;
+  margin: auto;
+  /* background-color: blue; */
 }
  
 .aboutTitle {
-  margin: 1.25rem auto;
-  width: 65%;
+  margin: 3vh auto;
+  padding: 1rem;
+  width: fit-content;
   text-align: center;
+  font-size: calc(2rem + 1vw);
+  /* background-color: red; */
 }
 
 .aboutText {
   width: 85%;
   margin: .5rem auto;
   text-indent: 2rem;
+  font-size: calc(.75rem+ 1vw);
+  /* background-color: yellow; */
 }
 
 /* End About Me Page */

@@ -878,7 +878,7 @@ input[type="submit"] {
 
 .aboutHeroText {
 	position: relative;
-	top: 8vh;
+	top: 3vh;
 	left: 10vw;
 	width: 50%;
 	height: fit-content;
@@ -937,7 +937,7 @@ input[type="submit"] {
 
 @media (min-width: 700px) {
 	.aboutText {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 }
 

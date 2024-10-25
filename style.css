@@ -679,7 +679,7 @@ a.quickLink {
 #contactFormText {
 	margin: auto;
 	margin-bottom: 1.25rem;
-	font-size: calc(1.5rem + 2vw);
+	font-size: calc(1.5rem + 1vw);
 	padding: 1rem;
 	padding-bottom: 2rem;
 	text-align: center;
@@ -701,6 +701,12 @@ input {
 label {
 	font-size: calc(1rem + .5vw);
 	margin: 1rem 3.5vw;
+}
+
+@media (min-width: 2000px) {
+	label {
+		margin: 1rem 2vw;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -759,7 +765,7 @@ input[type="submit"] {
 }
 
 .informationTitle {
-	font-size: calc(1rem + 1.5vw);
+	font-size: calc(1.5rem + 1vw);
 	margin: 4vh auto;
 	margin-top: 6vh;
 	width: 85%;
@@ -769,6 +775,7 @@ input[type="submit"] {
 
 .informationDisclaimer {
 	width: 90%;
+	max-width: 1480px;
 	padding: 0;
 	height: auto;
 	margin: 4vh auto;
@@ -789,6 +796,7 @@ input[type="submit"] {
 .informationList {
 	position: relative;
 	width: 90%;
+	max-width: 1480px;
 	padding: .5rem;
 	margin: 2vh auto;
 	margin-bottom: 2vh;
@@ -823,6 +831,7 @@ input[type="submit"] {
 .informationSubList li {
 	list-style-type: disc;
 	width: 75%;
+	max-width: 1048px;
 	padding: .25rem;
 	margin: 2vh auto;
 	font-size: calc(1.05rem + .75vw);
@@ -922,8 +931,14 @@ input[type="submit"] {
 	width: 85%;
 	margin: .5rem auto;
 	text-indent: 2rem;
-	font-size: calc(.65rem + .5vw);
+	font-size: calc(1.2rem + .5vw);
 	/* background-color: yellow; */
+}
+
+@media (min-width: 700px) {
+	.aboutText {
+		font-size: 1.4rem;
+	}
 }
 
 /* End About Me Page */

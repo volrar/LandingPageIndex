@@ -19,7 +19,7 @@
         <!-- Navigation -->
         <nav class="navigation"><!--navigation container-->
             <div class="logoContainer"><!--Maiin Logo Container-->
-                <img src= "Assets/Images/RuppLogoHighQuality500x500_White.png" alt="Log Ryan Logo"><!--Main Logo-->
+                <a href="index.html"><img src= "Assets/Images/RuppLogoHighQuality500x500_White.png" alt="Log Ryan Logo"></a><!--Main Logo-->
             </div>
             <!--main navigation-->
             <div class="mainNavigation">
@@ -82,7 +82,7 @@
 </div>
 
 <section id="faq">
-    <div class="faqContianer">
+    <div id="faqContainer">
         <h3>Frequently Asked Questions</h3>
 
             <ul class="questionsContainer">
@@ -90,15 +90,15 @@
                 <li class="questionContent">
 
                     <h4 class="question">When can I expect a reponse?</h4>
-                    <p class="answer active">I typically strive to answer emails within 1-2 businesses days, however external circumstances may prevent this at times. Should a considerable delay be expected
-                        it will be listed here, and any emails sent during this time will receive an automatic response details the expected delay length.
+                    <p class="answer active">I typically strive to answer emails within 1 - 2 businesses days, however. external circumstances may prevent this at times. Should a considerable delay be expected
+                        it will be listed here, and any emails sent during this time will receive an automatic response detailing the expected delay length.
                     </p>
                 </li>
 
                 <li class="questionContent">
 
                     <h4  class="question">Are you always accepting work?</h4>
-                    <p class="answer active">I am always will to hear your ideas and proposals! If I am ever not accepting work, be it for travel, vacation, or any other numerous options it will always be posted
+                    <p class="answer active">I am always willing to hear your ideas and proposals! If I am ever not accepting work, be it for travel, vacation, or any other numerous options it will always be posted
                         on the home page. Additionally, any emails sent to me during this time will receive an automated email stating that they may see a delay in response times.
                     </p>
 
@@ -107,8 +107,8 @@
                 <li class="questionContent">
 
                     <h4  class="question">What's your hourly rate?</h4>
-                    <p class="answer active">Pricing will typically be done on a per job basis. All price negotiations will be agreed upon before any work will be conducted. Hourly rates begin at minimum 22$USD/hr and will include a 
-                        contract detailing the expected hours worked on a per week basis as well as the expected wage per hour of work.
+                    <p class="answer active">Pricing will typically be done on a per job basis. All price negotiations will be agreed upon before any work will be conducted. Please note that hourly rates begin at minimum 25$USD/hr and will include a 
+                        contract detailing the expected hours worked on a per week basis as well as the expected wage per hour of work. 
                     </p>
 
                 </li>
@@ -118,7 +118,7 @@
                     <h4  class="question">Something came up and I need to cancel my project... </h4>
                     <p class="answer active">No worries! You may cancel a project at any time, no questions asked. All details will be subject to the job contract signed before any work was performed. Standard policy
                         states that each project will be subject to a cencelation fee proprtional to the amount of time already spent on the project. Should the project be based on hourly work there will
-                        be no cancelation fee, however all hours alrady worked on the project will need to be paid out.
+                        be no cancelation fee, however, all hours already worked on the project will need to be paid out.
                     </p>
 
                 </li>
@@ -126,7 +126,7 @@
                 <li class="questionContent">
 
                     <h4  class="question">What if I'm not happy with the final result?</h4>
-                    <p class="answer active">All projects are final as of completion. If you are unhappy with the delivered product, I am delighted to provide up to 2 free revisions of the final product not including any feeback provided during the 
+                    <p class="answer active">All projects are final as of completion. If you are unhappy with the delivered product I am delighted to provide up to 2 free revisions of the final product not including any feeback provided during the 
                         creation process. After, if you are still unhappy with the final result subsequent rates may be applied.
                     </p>
 
@@ -140,12 +140,12 @@
         <div class="contactInfo">
             <h3>Information</h3>
 
-            <p>I currently am only accepting inquiries exclusively through email. Please use the contact form provided to send me a
+            <p>I am currently only accepting inquiries exclusively through email. Please use the contact form provided to send me a
                 message regarding your project or inquiry. If you encounter any issues with the form or prefer to reach out
                 directly, feel free to reach out using the email below.
             </p>
 
-            <p>log.r.ryan@gmail.com</p>
+            <p><a href="mailto:someone@yoursite.com" class="mailLink">log.r.ryan@gmail.com</a></p>
 
             <p>In your message, please let me kow if you'd like a callback or if you prefer to communicate via email.
                 For the best experience, I recommend including a phone number in the form so I may follow up based on your
@@ -156,9 +156,11 @@
 
     <div id="formContainer"> 
 
-       <form id="contactForm" action="mailto:log.r.ryan@gmail.com" method="post" enctype="text/plain">
+       <form id="contactForm" action="https://api.web3forms.com/submit" method="post">
            
                <h3 id="contactFormText">Your next big project starts with a conversation!</h3>
+
+               <input type="hidden" name="access_key" value="fddc010f-c876-4027-a5d8-7fcd2a3dd877">
 
                 <label for="fullName" id="fullName">Full Name</label>
                <input type="text" id="name" name="name" required>

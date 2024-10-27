@@ -429,7 +429,10 @@ input[type="checkbox"]:checked~.hamburgerMenu>.bar:nth-child(3) {
 .contactHeroContainer p {
 	position: relative;
 	height: fit-content;
+	margin: auto 4vw;
+	margin-right: 0;
 	font-size: calc(3rem + 2vw);
+	/* background-color: red; */
 }
 
 @media (max-height: 220px) {

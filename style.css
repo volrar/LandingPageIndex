@@ -25,13 +25,16 @@ header,hgroup,menu,nav,section {
 body {
 	display: flex;
 	flex-direction: column;
-	line-height: 1;
+	line-height: 1.25;
 	color: #0e1010;
-	background: url(Assets/Images/justTest.jfif);
+	max-width: 1920px;
+	margin: auto;
+	overflow-x: hidden;
+	/* background: url(Assets/Images/justTest.jfif);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	background-color:rgb(19, 18, 18);
+	background-position: center; */
+	background-color:black;
 }
 
 ol,ul {
@@ -68,8 +71,8 @@ nav {
 }
 
 h3 {
-	font-size: 2rem;
-	margin: 2%
+	font-size: calc(1rem + 1vw);
+	margin: 2vh 0;
 }
 
 p {
@@ -395,6 +398,27 @@ input[type="checkbox"]:checked~.hamburgerMenu>.bar:nth-child(3) {
 
 /* Contact Page*/
 
+.contactOne {
+	width: 65%;
+	margin: auto;
+}
+
+.contactOne h3 {
+	width: 65%;
+}
+
+.contactOne p {
+	margin: 1vh;
+	padding: 1rem;
+}
+
+.contactOneInner {
+	/* background-color: red; */
+	height: 100%;
+	padding: 3rem;
+}
+
+
 /* Contact Form */
 
 .contactHeroContainer {
@@ -405,10 +429,9 @@ input[type="checkbox"]:checked~.hamburgerMenu>.bar:nth-child(3) {
 	display: flex;
 	justify-content: space-around;
 	color: #adbdba;
-	background-color:rgb(35, 35, 35);
 	border-bottom: 1px solid black;
-	background: url(Assets/Images/963adc6cec85b0ffd4889be10f0c0031.jpg);
-	background-size: cover;
+	/* background: url(Assets/Images/963adc6cec85b0ffd4889be10f0c0031.jpg);
+	background-size: cover; */
 }
 
 .contactTextContainer {
@@ -574,6 +597,10 @@ a.quickLink {
 	/* background-color: red; */
 }
 
+.answer.visible {
+    display: block;
+  }
+
 /* End Frequently Asked Questions */
 
 /* Contact Information/Form */
@@ -582,6 +609,7 @@ a.quickLink {
 	margin: auto;
 	width: 100%;
 	color: #adbdba;
+	display: flex;
 	/* background-color: #77989f; */
 }
 
@@ -617,17 +645,16 @@ a.quickLink {
 }
 
 #formContainer {
-	width: 100%;
+	width: 80%;
 	min-width: 50%;
 	height: fit-content;
 	margin: 0 auto;
 	position: relative;
-	margin-bottom: 2rem;
 	/* background-color: blue; */
 }
 
 #contactForm {
-	width: 95%;
+	width: 100%;
 	max-width: 1240px;
 	height: fit-content;
 	margin: auto;
@@ -639,29 +666,27 @@ a.quickLink {
 
 #contactFormText {
 	margin: auto;
-	margin-bottom: 1.25rem;
 	font-size: calc(1.5rem + 1vw);
-	padding: 1rem;
 	padding-bottom: 2rem;
 	text-align: center;
 	/* background-color: pink; */
 }
 
 input {
-	height: 4rem;
+	height: 3rem;
 	border-radius: .5rem;
-	width: 100vw;
-	max-width: 390px;
+	width: 60%;
+	/* max-width: 300px; */
 	border: none;
 	padding: 0;
-	margin: auto 5vw;
+	margin: auto 3vw;
 	border: 1px solid black;
 	/* background-color: grey; */
 }
 
 label {
 	font-size: calc(1rem + .5vw);
-	margin: 1rem 3.5vw;
+	margin: .5rem 3.5vw;
 	display: block;
 }
 
@@ -670,7 +695,7 @@ label {
 		margin: 1rem 2vw;
 	}
 }
-
+/* 
 @media (min-width: 1200px) {
 	input {
 		margin: auto 4rem;
@@ -689,7 +714,7 @@ label {
 		width: 90%;
 		margin: auto;
 	}
-}
+} */
 
 textarea {
 	padding: 1rem;
@@ -837,7 +862,7 @@ input[type="submit"] {
 }
 
 .aboutHero {
-	margin: 2vh auto;
+	margin: 0 auto;
 	margin-top: 0;
 	width: 100%;
 	height: 65vh;
@@ -845,72 +870,158 @@ input[type="submit"] {
 	display: flex;
 	justify-content: space-around;
 	border-bottom: 1px solid rgb(0, 0, 0);
-	background-color: rgb(19, 18, 18);
-	background: url(Assets/Images/963adc6cec85b0ffd4889be10f0c0031.jpg);
+	background-color: black;
 }
+
+@keyframes slideIn {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  transform: translateX(10vw); /* Move to the center */
+	}
+  }
+
+  @keyframes slideInOpposite {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0);
+	}
+  }
+
+.aboutHeroImageContainer {
+	background-color: black;
+	margin: auto 10vw;
+	width: 0;
+	height: 80%;
+	display: flex;
+	transform: translateX(-100vw);
+	animation: slideInOpposite 1.2s ease-out forwards;
+}
+
+
 .aboutHeroText {
 	position: relative;
-	margin: 8vh auto;
+	margin: auto;
 	width: 50%;
 	height: fit-content;
 	/* background-color: blue; */
+	transform: translateX(100vw);
+	animation: slideIn 1.2s ease-out forwards;
 }
 
-
-@media (max-width: 750px) {
-	.aboutHeroText {
-		left: 6vw;
-	}
-
+.aboutHeroText p {
+	color: white;
 }
 
 .heroText {
 	color: #adbdba;
-	margin: 5vh auto;
-	font-size: calc(2.25rem + 2vw);
+	margin: 2vh auto;
+	font-size: calc(2rem + 2vw);
 	/* background-color: red; */
-}
-
-@media (max-height: 355px) {
-	.heroText {
-		font-size: calc(1rem + 2vw);
-	}
-}
-
-@media (min-height: 355px) and (max-height: 525px) {
-	.heroText {
-		font-size: calc(1.5rem + 2vw);
-	}
-}
-
-@media (min-height: 525px) and (max-height: 740px) {
-	.heroText {
-		font-size: calc(2rem + 2vw);
-		margin: 0;
-	}
 }
 
 .aboutHeroImage {
-	width: auto;
-	min-width:175px;
-	max-height: 90%;
-	margin:  auto 10vw;
-	margin-left: 0;
-	margin-bottom: 0;
-	margin-right: 15vw;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	border-radius: 5rem 0 5rem 0;
 	/* background-color: red; */
 }
 
-@media (max-width: 360px) {
-	.aboutHeroImage {
-		margin-right: 3vw;
-	}
+#philosophy {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 800px;
+	/* background-color: green; */
+	display: flex;
+	background: url(Assets/Images/iamge.jpg);
+	background-size: cover;
+	background-position: top;
 }
 
-@media (min-width: 360px) and (max-width:600px) {
-	.aboutHeroImage {
-		margin-right: 10vw;
-	}
+.philosophyContainer {
+	width: 80%;
+	height: 100%;
+	margin: auto 0;
+	position: relative;
+	display: flex;
+	/* background-color: white; */
+}
+
+.philosophyImageContainer {
+	height: 100%;
+	width: 50%;
+}
+
+
+.philosophyText {
+	width: 80%;
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: rgba(255, 255, 255, 0.657);
+	/* background-color: blue; */
+}
+
+.philosophyButtonContainer {
+	/* background-color: yellow; */
+	margin: 1rem auto;
+	min-width: fit-content;
+	width: 100%;
+}
+
+.philosophyButton {
+	outline: 1px solid red;
+	width: 50%;
+	height: 3rem;
+	max-width: 15em;
+	margin: 4vh auto;
+	align-content: center;
+	text-align: center;
+	color: black;
+	background-color: #77393048;
+}
+
+.philosophyButton a {
+	width: 100%;
+	max-width: 15em;
+	height: 3rem;
+	height: 100%;
+	color: black;
+}
+
+.philosophyButton:hover {
+	cursor: pointer;
+	color: white;
+	background-color: red;
+}
+
+.philosophyText h3 {
+	margin:  auto 3vh;
+	font-size: calc(1rem + 1vw);
+	/* background-color: red; */
+}
+
+.philosophyText p {
+	margin: 1vh auto;
+	padding: 4vh;
+	font-size: calc(.5rem + 1vw);
+	color: black;
+	/* background-color: green; */
 }
 
 .aboutMeContainer {
@@ -926,7 +1037,7 @@ input[type="submit"] {
 	padding: 1rem;
 	width: fit-content;
 	text-align: center;
-	font-size: calc(1.5rem + 1vw);
+	font-size: calc(1.25rem + 1vw);
 	color: #773a30;
 }
 
@@ -945,6 +1056,202 @@ input[type="submit"] {
 		font-size: 1.5rem;
 	}
 }
+
+#skillset {
+	background-color: black;
+	color: white;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+	width: 100%;
+	margin: 3vh auto;
+}
+
+.skillsetIntro {
+	width: 40%;
+	height: 100%;
+	margin: auto;
+	/* background-color: green; */
+	/* outline: 1px solid orange; */
+}
+
+.skillsetIntroText {
+	width: 80%;
+	height: 90%;
+	margin: .5rem auto;
+	/* outline: 1px solid blue; */
+}
+
+.skillsetIntroText h3 {
+	margin: 2vh 0;
+}
+
+.skillsetIntroText p {
+	padding: 1vw;
+	font-size: calc(1rem + .5vw);
+}
+
+.skillsetDescriptionContainer {
+	width: 50%;
+	height: 100%;
+	margin: auto;
+}
+
+.skillsetDesciption {
+	width:100%;
+	height: auto;
+	margin: auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+.skill {
+	width: fit-content;
+	max-width: 275px;
+	height: 100%;
+	min-height: 25vw;
+	margin: 1rem auto;
+	padding: 1rem;
+	display: flex;
+	max-height: fit-content;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	/* background-color: white; */
+	border-radius: 1rem;
+	/* box-shadow: 1rem 1rem 1rem 0 rgb(165, 46, 46); */
+	/* outline: 1px solid orange; */
+}
+
+.skill h4 {
+	margin: .75rem 0;
+	font-size: calc(1rem + .75vw);
+}
+
+.skill p {
+	font-size: calc(1rem + .25vw);
+}
+
+@media (max-width: 550px) {
+	#skillset {
+		display: block;
+		/* background-color: purple; */
+	}
+
+	.skillsetIntro {
+		width: 100%;
+		margin: auto;
+	}
+
+	.skillsetDesciption {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+	.skillsetDescriptionContainer {
+		width: fit-content;
+	}
+
+	.skill {
+		margin: auto;
+		max-width: 1000px;
+	}
+
+}
+
+#experience {
+	background-color: black;
+	color: white;
+}
+
+.experienceWrapper {
+	/* background-color: grey; */
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.experienceInner {
+    width: 45%;
+	margin: 2vh 1vw;
+	height: 100%;
+	/* background-color: purple; */
+}
+
+.experienceInner h3 {
+	font-size: calc(1rem + 1vw);
+	margin: 2vh;
+	margin-bottom: 0;
+}
+
+.experienceInner div {
+	width: 100%;
+	min-width: 150px;
+	margin: auto;
+	margin-bottom: 2vh;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.experienceInner div p {
+	padding: 2rem;
+	font-size: calc(1rem + .25vw);
+}
+
+.experienceInner div a {
+	margin: 3.5rem auto;
+	height: auto;
+	min-height: 3rem;
+	padding: 1rem;
+	min-width: 8rem;
+	width: 45%;
+	max-width: 15em;
+	align-content: center;
+	text-align: center;
+	outline: 1px solid red;
+	/* background-color:red; */
+}
+
+
+figure {
+	width: 80%;
+	height: 100%;
+	display:flex;
+	margin: 1vh auto;
+	flex-direction: column;
+	/* background-color: red; */
+	overflow: hidden;
+}
+
+
+figure  img {
+	height: auto;
+	width: 95%;
+	margin: .75rem auto;
+	margin-bottom: 0;
+	/* background-color: green; */
+}
+
+figure:hover {
+	transform: scale(1.01)
+}
+
+figcaption {
+	width: 95%;
+	height: 100%;
+	margin: auto;
+	margin-bottom: 1vw;
+	/* background-color: cyan; */
+}
+
 
 
 /* End About Me Page */
